@@ -1,0 +1,199 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta name="Generator" content="tpshop" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>用户注册</title>
+
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <link rel="stylesheet" href="__WAP__/css/layer.css">
+    </head>
+    <body>
+        <header id="header" class='header'>
+            <div class="h-left"><a href="javascript:history.back(-1)" class="back"></a></div>
+            <div class="h-mid">用户注册</div>
+        </header>
+        <div id="tbh5v0">
+            <div class="log_reg_box">
+                <div id="logRegTabCon">
+                    <div class="log_reg_item" id="phonearea">
+                        <form action="" id="sc_register_form" method="post">
+                        	<input type="hidden" name="spread_id" value="{$Think.get.sid}" />
+                            <div class="field phone">
+                                <input type="text" name="sc_phone" placeholder="手机号码" class="c-form-txt-normal" />
+                            </div>
+                            <div class="field phone">
+                                <input type="text" name="name" placeholder="姓名" class="c-form-txt-normal" />
+                            </div>
+                            <div class="field phone">
+                                <input type="radio" value="1" name="sex" placeholder="性别" class="c-form-txt-normal" />男
+                                <input type="radio" value="2" name="sex" placeholder="性别" class="c-form-txt-normal" />女
+                            </div>
+
+                    		<input type="hidden" name="referurl" value="{$referurl}"/>
+                            <div class="field pwd">
+                                <input type="password" name="sc_password" placeholder="密码" class="c-form-txt-normal" />
+                            </div>
+                            <div class="field pwd">
+                                <input type="password" id="password2" name="sc_re_password" placeholder="确认密码" class="c-form-txt-normal" />
+                            </div>
+
+<!--                             <div class="yanzheng"  style=" margin-top:0px;">
+                                <div class="codeTxt">
+                                    <input type="text" id="mobile_code"  name="mobile_code" placeholder="手机验证码" />
+                                </div>
+                                <div class="codePhoto">
+                                    <input id="zphone" type="button" value="发送手机验证码 " class="zphone" style=" color:#FFF" />
+                                </div>
+                            </div> -->
+                            <input type="button" class="btn_big1 sc_register" value="注 册" data-url="{:U('Wap/Index/ajaxRegister')}" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+    </body>
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+<!-- <script src="Public/Admin/js/ajaxfileupload.js"></script> -->
+<script src="__WAP__/js/layer.js"></script>
+<script type="text/javascript">
+            // var js = 60;
+            // function setTimes(){
+            //  if(js == 0){
+            //      $('.zphone').val('发送手机验证码');
+   //               $('.zphone').attr('disabled', false);
+            //      js = 60;
+            //  }else{
+            //      $('.zphone').val('重新发送 ('+js+')');
+            //      js--;
+            //      setTimeout('setTimes()',1000)
+            //  }
+            // }
+            // $('.zphone').on('click',function(){
+   //              var _this = $(this);
+   //              _this.attr('disabled', true);
+   //              //手机号码
+   //              var sc_phone = $('input[name="sc_phone"]');
+   //              var sc_phone_val = $.trim(sc_phone.val());
+            //  var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+   //              if (sc_phone_val.length == 0 || !myreg.test(sc_phone_val)) {
+   //                  layer.open({content: '请输入有效的手机号码', time: 2,
+   //                      end: function () {
+   //                          sc_phone.select();
+   //                          _this.attr('disabled', false);
+   //                      }});
+   //                  return;
+   //              }
+   //              $.ajax({
+   //                  url: "{:U('Wap/Index/ajaxSend')}",
+   //                  async: true,
+   //                  type: 'post',
+   //                  data: {mob:sc_phone_val},
+   //                  dataType: 'json',
+   //                  contentType: "application/x-www-form-urlencoded; charset=utf-8",
+   //                  success: function (data, status) {
+            //          layer.open({content: data.info, time: 2,
+            //              end: function () {
+            //                  if (data.status == 1) {
+            //                      setTimeout('setTimes()',0);
+            //                  }else{
+            //                      _this.attr('disabled', false);
+            //                  }
+            //              }
+            //          });
+   //                  }
+   //              });
+            // });
+            $('.sc_register').click(function () {
+
+
+                var _this = $(this);
+                _this.attr('disabled', true);
+                //手机号码
+                var sc_phone = $('input[name="sc_phone"]');
+                var sc_phone_val = $.trim(sc_phone.val());
+                var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+                if (sc_phone_val.length == 0 || !myreg.test(sc_phone_val)) {
+
+                    layer.open({content: '请输入有效的手机号码', time: 2,
+                        end: function () {
+                            sc_phone.select();
+                            _this.attr('disabled', false);
+                        }});
+                
+                    return;
+                }
+  
+                //密码
+                var sc_password = $('input[name="sc_password"]');
+                var sc_password_val = $.trim(sc_password.val());
+                if (sc_password_val.length == 0) {
+                    layer.open({content: '密码不能为空', time: 2,
+                        end: function () {
+                            sc_password.select();
+                            _this.attr('disabled', false);
+                        }});
+                    return;
+                }
+                
+                if (sc_password_val.length < 6 || sc_password_val.length > 16) {
+                    layer.open({content: '密码长度为6-16位', time: 2,
+                        end: function () {
+                            sc_password.select();
+                            _this.attr('disabled', false);
+                        }});
+                    return;
+                }
+
+                var sc_re_password = $('input[name="sc_re_password"]');
+                var sc_re_password_val = $.trim(sc_re_password.val());
+                if (sc_re_password_val != sc_password_val) {
+                    layer.open({content: '确认密码与密码不一致', time: 2,
+                        end: function () {
+                            sc_re_password.select();
+                            _this.attr('disabled', false);
+                        }});
+                    return;
+                }
+
+                //验证码
+                // var sc_code = $('input[name="mobile_code"]');
+                // var sc_code_val = $.trim(sc_code.val());
+                // if (sc_code_val.length == 0) {
+                //     layer.open({content: '手机验证码不能为空', time: 2,
+                //         end: function () {
+                //             sc_code.select();
+                //             _this.attr('disabled', false);
+                //         }});
+                //     return;
+                // }
+                
+                var data = $('#sc_register_form').serialize();
+
+                var url = _this.data('url');
+
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'post',
+                    data: data,
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.open({content: data.info, time: 2,
+                                end: function () {
+                                    window.location.href = data.url;
+                                }});
+                        } else {
+                            layer.open({content: data.info, time: 2});
+                            _this.attr('disabled', false);
+                        }
+                    }
+                });
+            });
+        </script>
+</html>

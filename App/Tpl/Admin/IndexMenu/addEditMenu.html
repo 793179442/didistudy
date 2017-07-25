@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$instituition['ins_id']">编辑用户指南信息<else />添加用户指南信息</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="ins_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td>标题称：</td>
+                                        <td>
+                                            <div class="col-xs-12">
+                                                <input type="text" class="form-control" name="menu_name" value="{$ci_menu_data.menu_name}" maxlength="50" />
+                                                 <input type="hidden" name="id" value="{$menu_ids}">
+                                            </div>
+        
+                                        </td>
+                                    </tr>
+<!--                                     <tr>
+                                        <td width="12%">上级用户指南：</td>
+                                        <td width="88%">
+                                            <div class="col-xs-6">
+                                                <select name="p_parent_id" class="form-control" <gt name="instituition.sub_count" value="0">disabled</gt>>
+                                                    <option value="0">顶级</option>
+                                                    <volist name="ins_list" id="ins">
+                                                        <option value="{$ins.ins_id}" <eq name="parent_id" value="$ins.ins_id">selected</eq>>{$ins.instituition_name}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>内容：</td>
+                                        <td>
+                                            <div class="col-xs-6">
+                                             <textarea name="content" class="form-control" style="resize: none;">{$ci_menu_data.content}</textarea>
+                                               <!--  <input type="text" class="form-control" name="content" value="{$ci_menu_data.content}" maxlength="5" /> -->
+                                            </div>
+                                        </td>
+                                    </tr>
+<!--                                     <tr>
+                                        <td>备注：</td>
+                                        <td>
+                                            <div class="col-xs-6">
+                                                <textarea name="p_remark" class="form-control" style="resize: none;">{$instituition.remark}</textarea>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                             
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+        <include file="Public:button" />
+    </div>
+    <!-- End #content -->
+                            <div class="form-inline form-group text-center">
+                                <if condition="$by_p_title eq '编辑用户指南信息'">
+                                    <input type="hidden" name="rq_id" value="{$residential_quarters.rq_id}" />
+                                    <input type="button" class="btn btn-info residential_quarters" value="编辑" data-url="{:U('Admin/IndexMenu/ajaxEditMenu')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info residential_quarters" value="添加" data-url="{:U('Admin/IndexMenu/ajaxAddMenu')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+    <script>
+        $('.residential_quarters').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+            //标题称
+            var p_instituition_name = $('input[name="menu_name"]');
+            var p_instituition_name_val = $.trim(p_instituition_name.val());
+            if (p_instituition_name_val.length == 0) {
+                layer.alert('请输入标题称', {icon: 2, time: 2000,
+                    end: function () {
+                        p_instituition_name.focus();
+                        p_instituition_name.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_instituition_name.focus();
+                        p_instituition_name.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+            
+
+
+            var data = $('#ins_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

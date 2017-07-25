@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> 分类信息</h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="customer_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+
+                                    <volist name='customer' id='vo'>
+                                    <tr>
+                                        
+                                        <td>
+                                            <div class="input-group col-xs-6">{$vo.cate_Name}</div>
+                                        </td>
+                                            <td>
+                                                <a class="btn btn-primary btn-sm" href="{:U('Admin/CourseType/detailInfo',array('course_id'=>$vo['cate_Id']))}">子类</a>
+                                                <a class="btn btn-primary btn-sm" href="{:U('Admin/CourseType/editCourseType',array('course_id'=>$vo['cate_Id']))}">编辑</a>
+                                                <a class="btn btn-danger btn-sm del_cus" href="javascript:void(0)" data-url="{:U('Admin/CourseType/ajaxDelCourseType')}" data-id="{$vo.cate_Id}">删除</a>
+                                            </td>
+                                    </tr>
+                                    </volist>
+                                   
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+        $('.del_cus').click(function () {
+            var _this = $(this);
+            var url = _this.data('url');
+            var id = "";
+            if (_this.hasClass('del_all')) {
+                if ($('.fck:checked').length == 0) {
+                    layer.alert('请选择要删除的', {icon: 1});
+                    return;
+                }
+                $('.fck:checked').each(function () {
+                    var val = $(this).val();
+                    id += val + ",";
+                });
+                id = id.slice(0, -1);
+            } else {
+                id = _this.data('id');
+            }
+            layer.confirm('是否删除', {
+                title: '提示',
+                btn: ['是', '否']
+            }, function (index) {
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'get',
+                    data: {id: id},
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.alert(data.info, {icon: 1, time: 2000,
+                                end: function () {
+                                    window.history.go(0);
+                                }, cancel: function () {
+                                    window.history.go(0);
+                                }});
+                        } else {
+                            layer.alert(data.info, {icon: 2, time: 2000});
+                        }
+                    }
+                });
+                layer.close(index);
+            }, function () {
+            });
+        });
+</script>
+</body>
+</html>

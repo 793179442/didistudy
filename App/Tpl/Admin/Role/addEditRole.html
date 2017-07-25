@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <empty name="role.role_id">添加角色信息<else /> 修改角色信息</empty>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="role_form" method="post">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th width="10%">角色名称:</th>
+                                        <td width="90%"><div class="col-xs-6"><input type="text" class="form-control" name="role_name" value="{$role.role_name}" /></div></td>
+                                    </tr>
+                                    <tr>
+                                        <th >角色描述:</th>
+                                        <td><div class="col-xs-8"><textarea rows="3" name="role_text" class="form-control" style="resize: none;">{$role.explain}</textarea></div></td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">权限：</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="col-xs-12">
+                                                <volist name="jurisdiction_list" id="jurisdiction">
+                                                    <div class="panel panel-info">
+                                                        <div class="panel-heading"><label class="checkbox-inline"><input type="checkbox" class="check_all" />{$jurisdiction.fm_name}</label></div>
+                                                        <div class="panel-body">
+                                                            <div class="form-group">
+                                                                <volist name="jurisdiction['sub']" id="sub">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" name="jurisdiction_id[]" value="{$sub.fm_id}" class="check_auth" <if condition="in_array($sub['fm_id'],$role['jurisdiction_arr'])">checked</if> />{$sub.fm_name}
+                                                                    </label>
+                                                                </volist>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </volist>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$role['role_id']">
+                                    <input type="hidden" name="role_id" value="{$role.role_id}" />
+                                    <input type="button" class="btn btn-info role" value="编辑" data-url="{:U('Admin/Role/ajaxEditRole')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info role" value="添加" data-url="{:U('Admin/Role/ajaxAddRole')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script type="text/javascript">
+
+        $('.check_all').each(function () {
+            $(this).click(function () {
+                var status = $(this).prop('checked');
+                $(this).parents('.panel-heading').next('.panel-body').find('.check_auth').prop('checked', status);
+            });
+            var len = $(this).parents('.panel-heading').next('.panel-body').find('.check_auth').length;
+            var len_check = $(this).parents('.panel-heading').next('.panel-body').find('.check_auth:checked').length;
+            if (len == len_check) {
+                $(this).prop('checked', true)
+            }
+        });
+
+        $('.check_auth').each(function () {
+            $(this).click(function () {
+                var flag = true;
+                $(this).parents('.form-group').find('.check_auth').each(function () {
+                    if (!$(this).prop('checked')) {
+                        flag = false;
+                        return false;
+                    }
+                });
+                $(this).parents('.panel-info').find('.check_all').prop('checked', flag);
+            });
+        });
+
+        $('.role').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+  
+            //角色名称
+            var role_name = $('input[name="role_name"]');
+            var role_name_val = $.trim(role_name.val());
+            if (role_name_val.length == 0) {
+                layer.alert('角色名称不能为空', {icon: 2, time: 2000,
+                    end: function () {
+                        role_name.focus();
+                        role_name.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        role_name.focus();
+                        role_name.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //权限
+            var ju_count = $('.check_auth:checked').length;
+            if (ju_count == 0) {
+                layer.alert('请选择权限', {icon: 2, time: 2000,
+                    end: function () {
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var data = $('#role_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

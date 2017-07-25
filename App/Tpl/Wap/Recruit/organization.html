@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>教学机构</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<body style="background-color: #f0eff5;">
+<div class = "container login-1">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back t1">返回</span></a>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div >
+            <form id="organizition_form" action=""  method="post">
+                <div class="login-form-item">
+                    <label class="">机构名称</label>
+                    <input type="text" name="organizition_name" placeholder="请输入机构全名">
+                </div>
+                <div class="login-form-item">
+                    <label class="">营业证号</label>
+                    <input type="text" name="organizition_number" placeholder ="营业执照号">
+                </div>
+                <div class="login-form-item">
+                    <label class="">地址</label>
+                    <input type="text" name="organizition_address" placeholder  = "请输入所在地址">
+                </div>
+                <div class="login-form-item">
+                    <label class="">联系人</label>
+                    <input type="text" name="organizition_person" placeholder  = "请输入联系人姓名">
+                </div>
+                <div class="login-form-item">
+                    <label class="">经营范围</label>
+                    <input type="text" name="organizition_range" placeholder  = "请输入经营范围">
+                </div>
+               
+        </div>
+
+        <div class="nav">
+            <p>上传营业执照照片</p>
+            <div class="left">
+                <a href="javascript:void(0);"  onclick="show1();">
+                    <img src="__WAP__/images/login/zhizhao.png">
+                </a>
+            <input type="hidden" name="organizition_img" class="fefef">
+            <input  name="rq_img" id="rq_img" type="file" class="form-control" style="display: none;" />
+            </div>
+            <div class="right">
+                <img class="right2" src="__WAP__/images/login/lan.png">
+            </div>
+            <div class="clear"></div>
+             </form>
+        </div>
+        <div class="login-btn">
+            <button data-url="{:U('Wap/Recruit/ajaxaddorganizition')}" class="click_step"  type="submit">下一步</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="Public/Admin/js/jquery-1.8.3.min.js"></script>
+<!-- <script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+ --><script src="Public/Admin/js/ajaxfileupload.js"></script>
+<script src="Public/Admin/plugins/layer/layer.js"></script>
+<script type="text/javascript">
+    function show1(){
+        $("#rq_img").click();
+    };
+    $('input[name="rq_img"]').live('change', function () {
+            uploadImg();
+    });
+        //上传图片
+        function uploadImg() {
+
+            $.ajaxFileUpload({
+                url: "{:U('Wap/Recruit/ajaxUploadImg')}",
+                type: 'post',
+                fileElementId: 'rq_img',
+                secureuri: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        $('.fefef').val(data.img_src);
+                        $('.right2').attr('src',data.tmp_src);
+                        // layer.alert(data.img_src);
+                        // alert(1);
+                    } else if (data.status == 0) {
+                        layer.alert(data.info, {icon: 2});
+                    }
+                }
+            });
+           // alert(1);
+        }
+        $('.click_step').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+            var data = $('#organizition_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+</script>
+</html>

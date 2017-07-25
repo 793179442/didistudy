@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> 会员信息</h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="customer_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+
+                                    <tr>
+                                        <td>教师名称：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">{$customer.teacher_name}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>创建时间：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">{$customer.create_time|date='Y-m-d',###}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>学生：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">{$customer.student_name}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>课程名称：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$customer.course_name}</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>状态：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$customer.status}</div>
+                                        </td>
+                                    </tr>
+                                    <!--<tr>-->
+                                        <!--<td>备注：</td>-->
+                                        <!--<td>-->
+                                            <!--<div class="input-group col-xs-12">{$customer.remark}</div>-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+</body>
+</html>

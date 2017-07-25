@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i class="ec-list"></i>消息设置
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse">
+                                <form class="navbar-form form-inline" action="" method="get">
+                                    <input type="hidden" name="g" value="Admin" />
+                                    <input type="hidden" name="m" value="ResidentialQuarters" />
+                                    <input type="hidden" name="a" value="index" />
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-mobile">消息名称：</label>
+                                        <div class="form-group">
+                                            <input type="text" name="p_residential_quarters" value='{$Think.get.p_residential_quarters}' class="form-control" placeholder="消息名称" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-mobile">所属机构：</label>
+                                        <div class="form-group form-inline">
+                                            <select name="p_par_ins" class="form-control">
+                                                <option value="0">--一级机构--</option>
+                                                <volist name="ins_list" id="ins">
+                                                    <option value="{$ins.ins_id}" <eq name="Think.get.p_par_ins" value="$ins.ins_id">selected</eq>>{$ins.instituition_name}</option>
+                                                </volist>
+                                            </select>
+                                            <select name="p_instituition_id" class="form-control" <eq name="ins_sub_list|count" value="0">disabled</eq>>
+                                                <option value="0">--二级机构--</option>
+                                                <volist name="ins_sub_list" id="ins">
+                                                    <option value="{$ins.ins_id}" <eq name="Think.get.p_instituition_id" value="$ins.ins_id">selected</eq>>{$ins.instituition_name}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group pull-right">
+                                        <button type="submit" class="btn btn-primary">筛选</button>
+                                        <a href="{:U('Admin/ResidentialQuarters/addResidentialQuarters')}" class="btn btn-primary">添加消息</a>
+                                        <a href="javascript:void(0)" class="btn btn-danger pull-right del_rq del_all" style="margin-left: 2px;" data-url="{:U('Admin/ResidentialQuarters/ajaxDelResidentialQuarters')}"><i class="fa fa-trash-o"></i> 删除</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                        <div class="table-responsive">
+                            <table  class="table table-bordered table-striped">
+                                <thead>
+                                    <tr role="row">
+                                        <td width="5%" class="text-center"><input type="checkbox" id="checkAll" /></td>
+                                        <td width="20%">消息名称</td>
+                                        <td width="15%">所属机构</td>
+                                        <td width="15%">开发商</td>
+                                        <td width="10%">建筑面积</td>
+                                        <td width="10%">占地面积</td>
+                                        <td width="10%">消息总户数</td>
+                                        <td width="15%">操作</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <if condition="empty($residential_quarters)">
+                                    <tr role="row" align="center"><td colspan="8">暂无数据</td></tr>
+                                    <else />
+                                    <volist name="residential_quarters" id="rq">
+                                        <tr role="row">
+                                            <td class="text-center"><input type="checkbox" class='fck' value="{$rq.rq_id}" name="rq_id[]" /></td>
+                                            <td>{$rq.residential_quarters}</td>
+                                            <td>{$rq.instituition_name}</td>
+                                            <td>{$rq.rq_developers}</td>
+                                            <td>{$rq.floor_area}</td>
+                                            <td>{$rq.covers_area}</td>
+                                            <td>{$rq.total_household}</td>
+                                            <td>
+                                                <a class="btn btn-primary btn-sm" href="{:U('Admin/ResidentialQuarters/detailInfo',array('rq_id'=>$rq['rq_id']))}">查看</a>
+                                                <a class="btn btn-primary btn-sm" href="{:U('Admin/ResidentialQuarters/editResidentialQuarters',array('rq_id'=>$rq['rq_id']))}">编辑</a>
+                                                <a class="btn btn-danger btn-sm del_rq" href="javascript:void(0)" data-url="{:U('Admin/ResidentialQuarters/ajaxDelResidentialQuarters')}" data-id="{$rq.rq_id}">删除</a>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                </if>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-left"></div>
+                            <div class="col-sm-6 text-right">
+                                <ul class="pagination" id="page_ul"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+        $('#checkAll').click(function () {
+            $('.fck').prop('checked', $(this).prop('checked'));
+        });
+
+        $('.fck').each(function () {
+            $(this).click(function () {
+                var flag = true;
+                $('.fck').each(function () {
+                    if (!$(this).prop('checked')) {
+                        flag = false;
+                        return false;
+                    }
+                });
+                $('#checkAll').prop('checked', flag);
+            });
+        });
+        
+        $('select[name="p_par_ins"]').change(function () {
+            var _this = $(this);
+
+            var ins_id = _this.val();
+
+            var ins_this = $('select[name="p_instituition_id"]');
+            ins_this.empty();
+            ins_this.attr('disabled', true);
+            ins_this.append('<option value="0">--二级机构--</option>');
+
+            $.ajax({
+                url: '{:U("Admin/ResidentialQuarters/ajaxGetInstituition")}',
+                async: true,
+                type: 'get',
+                data: {ins_id: ins_id},
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        var ins_list = data.data;
+                        for (var i = 0; i < ins_list.length; i++) {
+                            ins_this.append('<option value="' + ins_list[i].ins_id + '">' + ins_list[i].instituition_name + '</option>');
+                        }
+                        ins_this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+
+        $('.del_rq').click(function () {
+            var _this = $(this);
+            var url = _this.data('url');
+            var id = "";
+            if (_this.hasClass('del_all')) {
+                if ($('.fck:checked').length == 0) {
+                    layer.alert('请选择要删除的', {icon: 1});
+                    return;
+                }
+                $('.fck:checked').each(function () {
+                    var val = $(this).val();
+                    id += val + ",";
+                });
+                id = id.slice(0, -1);
+            } else {
+                id = _this.data('id');
+            }
+            layer.confirm('是否删除', {
+                title: '提示',
+                btn: ['是', '否']
+            }, function (index) {
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'get',
+                    data: {id: id},
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.alert(data.info, {icon: 1, time: 2000,
+                                end: function () {
+                                    window.history.go(0);
+                                }, cancel: function () {
+                                    window.history.go(0);
+                                }});
+                        } else {
+                            layer.alert(data.info, {icon: 2, time: 2000});
+                        }
+                    }
+                });
+                layer.close(index);
+            }, function () {
+            });
+        });
+
+        page({$page_arr.page}, 10, {$page_arr.pages}, document.getElementById('page_ul'), '{$page_arr.url}');
+    </script>
+</body>
+</html>

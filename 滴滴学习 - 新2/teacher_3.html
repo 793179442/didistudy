@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>我的课程</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container teacher-3">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+        <span class="title ">我的课程</span>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+
+        <div class="bar">
+            <a href="publish_course.html">发布新课程<i class="icon icon-add1"></i></a>
+        </div>
+        <div class="bar">
+            <p>已发布课程</p>
+            <ul class="item-more-bg" id = "item1">
+                <li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>
+                <li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>
+                <li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>
+            </ul>
+            <div class="teacher-more" onclick="add1()">
+                    <a href="#">展开更多<i></i></a>
+            </div>
+        </div>
+
+        <div class="bar">
+            <p>已完成课程</p>
+            <ul class="item-more-bg" id = "item2">
+                <li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>
+                <li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>
+                <li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>
+            </ul>
+            <div class="teacher-more" onclick="add2();">
+                <a href="#">展开更多<i></i></a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+    function add1()
+    {
+            var u = $("#item1");
+            var str = '<li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>';
+            for (var i = 1;i<=3;i++)
+            {
+                u.append(str);
+            }
+    }
+    function add2()
+    {
+            var u = $("#item2");
+            var str = '<li><a href="#">初中(全级)物理补习辅导 16课时 <span>380</span>元</a></li>';
+            for (var i = 1;i<=3;i++)
+            {
+                u.append(str);
+            }
+    }
+</script>
+</html>

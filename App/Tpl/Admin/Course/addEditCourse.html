@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$customer['customer_id']">编辑课程信息<else />添加课程信息</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="customer_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+<!--                                     <tr>
+                                        <td width="12%">所属小区：</td>
+                                        <td width="88%">
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_residential_quarters_id" class="form-control">
+                                                    <option value="-1">--请选择--</option>
+                                                    <volist name="residential_quarters" id="rq">
+                                                        <option value="{$rq.rq_id}" <eq name="rq.rq_id" value="$customer.residential_quarters_id">selected</eq>>{$rq.residential_quarters}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>课程姓名：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="p_customer_name" value="{$customer.course_name}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>价格：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="course_price" value="{$customer.course_price}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>门市价：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="course_shop_price" value="{$customer.course_shop_price}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>课时：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="course_time" value="{$customer.course_time}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" col-xs-2">图片：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <span class="input-group-addon rq_img" style="cursor: pointer;">选择图片</span>
+                                                <input name="p_rq_picture" type="text" class="form-control" readonly value="{$customer.course_img}" />
+                                                <input name="rq_img" id="rq_img" type="file" class="form-control" style="display: none;" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>图片介绍：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="course_img_text" value="{$customer.course_img_text}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>地址：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="address" value="{$customer.address}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>介绍：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="remark" value="{$customer.remark}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>课程联系号码：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="course_phone" value="{$customer.course_phone}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>开始时间：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="time_start" value="{$customer.time_start}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>结束时间：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="time_end" value="{$customer.time_end}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>规则：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="rule" value="{$customer.rule}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>适用人数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="person_range" value="{$customer.person_range}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>套餐包含服务：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="detail" value="{$customer.detail}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$customer['course_id']">
+                                    <input type="hidden" name="course_id" value="{$customer.course_id}" />
+                                    <input type="button" class="btn btn-info customer" value="编辑" data-url="{:U('Admin/Course/ajaxEditCourse')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info customer" value="添加" data-url="{:U('Admin/Course/ajaxAddCourse')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script src="__ADMIN__/js/ajaxfileupload.js"></script>
+    <script>
+
+
+
+
+        $('.customer').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+
+            var data = $('#customer_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+        $('.rq_img').click(function () {
+            $('input[name="rq_img"]').click();
+        });
+
+        $('input[name="rq_img"]').live('change', function () {
+            uploadImg();
+        });
+
+        //上传图片
+        function uploadImg() {
+            $.ajaxFileUpload({
+                url: "{:U('Admin/Course/ajaxUploadImg')}",
+                type: 'post',
+                fileElementId: 'rq_img',
+                secureuri: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        $('input[name="p_rq_picture"]').val(data.img_src);
+                    } else if (data.status == 0) {
+                        layer.alert(data.info, {icon: 2});
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>接单详情</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f9f8fd;">
+<div class = "container order-3">
+    <!-- header -->
+    <header class="header c1">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="top-left-back"></span></a>
+        <span class="top-logo"><img src="images/logo1.png"></span>
+    </header>
+    <div class="header-height"></div>
+
+    <!-- page -->
+    <div class = "page">
+        <div class="bar1">
+            <div class="title">已提交的需求</div>
+            <div class="content  white-style">
+                <div class="t1"><i></i>辅导初二物理</div>
+                <div class="t2">优选：一对一；珠江楼附近；环境好</div>
+            </div>
+        </div>
+        <div class="bar2">
+            <div class="title">已收到的回复<span><a href="order_3.html">刷新</a></span></div>
+            <div class="content white-style" id = "content">
+                <div class="item more">
+                    <a href="order_4.html">
+                        <div class="number">5</div>
+                        <div class="img"><img src="images/order/img.png"></div>
+                        <div class="content">
+                            <div class="t1">天山教育广场
+                                <span class="vip"><img src="images/order/vip.png">认证</span>
+                                <span class="rating-stars" data-rating="3.0">
+                            <span class="rating-star rating-star-small-gray"></span>
+                            <span class="rating-star rating-star-small-gray"></span>
+                            <span class="rating-star rating-star-small-gray"></span>
+                           
+                        </span>
+                            </div>
+                            <div class="t2">12:53 已接单 查看详情<span>体验课</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item more">
+                    <a href="order_4.html">
+                        <div class="img"><img src="images/order/img.png"></div>
+                        <div class="content">
+                            <div class="t1">临风老师</div>
+                            <div class="t2">12:53 已接单 查看详情<span>体验课</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item more">
+                    <a href="order_4.html">
+                        <div class="img"><img src="images/order/img.png"></div>
+                        <div class="content">
+                            <div class="t1">老师</div>
+                            <div class="t2">12:53 已接单 查看详情<span>体验课</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item more">
+                    <a href="order_4.html">
+                        <div class="img"><img src="images/order/img.png"></div>
+                        <div class="content">
+                            <div class="t1">老师</div>
+                            <div class="t2">昨天12:53 已接单 查看详情<span>体验课</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)" onclick = "add();">加载更多<span class="icon-fot-more"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    function add()
+    {
+        var div = '<div class="item more"><a href="#"><div class="number">5</div><div class="img"><img src="images/order/img.png"></div><div class="content"><div class="t1">天山教育广场<span class="vip"><img src="images/order/vip.png">认证</span><span class="rating-stars" data-rating="3.0"><span class="rating-star rating-star-small-gray"></span><span class="rating-star rating-star-small-gray"></span><span class="rating-star rating-star-small-gray"></span></span></div><div class="t2">12:53 已接单 查看详情<span>体验课</span></div></div></a></div>';
+        $("#content").append(div);
+    }
+</script>
+</html>

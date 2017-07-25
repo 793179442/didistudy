@@ -1,0 +1,63 @@
+7 8 9 10 11
+ubuntu 
+
+git
+
+php7.0
+
+hhvm
+
+nginx nginx
+
+redis
+
+phpstorm 有ftp同步功能 对laravel 有代码提示 ide
+
+composer.json
+
+eclispe
+
+zend studio
+
+sublime /atom
+
+visual studio code
+
+phpstorm 
+
+
+目录结构
+app
+	console
+	event
+	http 控制器 模型  路由 中间件
+	config
+	database 多人开发 数据迁移
+	public 网站入口
+		index.php
+		.htaccess
+		web.config
+	resource 
+		assets 
+		lang
+		views
+	storge 	缓存
+		app
+		framwork
+		logs
+	test
+	vendor 源代码 
+	.env 环境配置
+	gulpfile 
+http 基础路由  postman
+vpn代理 翻墙工具
+控制器 artisan make:controller HomeController
+namespace 命名空间 其实就是文件夹路径
+
+高级路由器 路由分组 namespace 分组 admin home
+
+子域名 的 绑定
+
+中间件 加一层保护 过滤 web中间件 middleware 有中间件 才能使用session
+
+资源路由 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>教学机构</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f0eff5;">
+<div class = "container login-1">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back t1">返回</span></a>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div >
+            <form action=""  method="post">
+                <div class="login-form-item">
+                    <label class="">机构名称</label>
+                    <input type="text" name="" placeholder="请输入机构全名">
+                </div>
+                <div class="login-form-item">
+                    <label class="">营业证号</label>
+                    <input type="text" name="" placeholder ="营业执照号">
+                </div>
+                <div class="login-form-item">
+                    <label class="">地址</label>
+                    <input type="text" name="" placeholder  = "请输入所在地址">
+                </div>
+                <div class="login-form-item">
+                    <label class="">联系人</label>
+                    <input type="text" name="" placeholder  = "请输入联系人姓名">
+                </div>
+                <div class="login-form-item">
+                    <label class="">经营范围</label>
+                    <input type="text" name="" placeholder  = "请输入经营范围">
+                </div>
+                </form>
+        </div>
+
+        <div class="nav">
+            <p>上传营业执照照片</p>
+            <div class="left">
+                <a href="javascript:void(0);"  onclick="show();">
+                    <img src="images/login/zhizhao.png">
+                </a>
+                <input type="file" name="" id = "file">
+            </div>
+            <div class="right">
+                <img src="images/login/lan.png">
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="login-btn">
+            <button class="" type="submit">下一步</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    function show(){
+        $("#file").click();
+    };
+</script>
+</html>

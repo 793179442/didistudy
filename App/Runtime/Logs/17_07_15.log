@@ -1,0 +1,1627 @@
+[ 2017-07-15T09:41:08+08:00 ] 0.0.0.0 /dididi5/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T09:41:11+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T09:42:13+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T09:42:30+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T09:46:49+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `name` FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T09:57:25+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `name` FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM by_member_info g LEFT JOIN OrderInfo p  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : SELECT * FROM by_member_info g LEFT JOIN OrderInfo p 
+
+[ 2017-07-15T09:58:38+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `name` FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM by_member_info g LEFT JOIN OrderInfo p  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : SELECT * FROM by_member_info g LEFT JOIN OrderInfo p 
+
+[ 2017-07-15T10:00:46+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `name` FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004001s ]
+SQL: SELECT * FROM by_member_info g LEFT JOIN OrderInfo p  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : SELECT * FROM by_member_info g LEFT JOIN OrderInfo p 
+
+[ 2017-07-15T10:03:22+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `name` FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003001s ]
+SQL: SELECT * FROM by_member_info g LEFT JOIN OrderInfo p ON g.member_id = p.student_id  [ RunTime:0.000000s ]
+ERR: 1146:Table 'by_shop.orderinfo' doesn't exist
+ [ SQL语句 ] : SELECT * FROM by_member_info g LEFT JOIN OrderInfo p ON g.member_id = p.student_id 
+
+[ 2017-07-15T10:03:23+08:00 ] 0.0.0.0 /dididi5/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T10:05:20+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `name` FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM by_member_info g LEFT JOIN by_order_info p ON g.member_id = p.student_id  [ RunTime:0.000000s ]
+
+[ 2017-07-15T10:12:00+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-15T10:12:04+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T10:12:30+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T10:12:43+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 34 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T10:13:58+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index&p=333
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Common\common.php 第 109 行.
+
+[ 2017-07-15T10:15:03+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index&p=333
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Common\common.php 第 109 行.
+
+[ 2017-07-15T11:14:50+08:00 ] 0.0.0.0 /dididi5/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:14:53+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:15:28+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:15:29+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:15:30+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checkmembertype
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:15:32+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: teacher D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\IndexAction.class.php 第 6 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:15:35+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Index&a=ajaxloginf
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `name` = 'admin' ) AND ( `member_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:15:38+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = 28 )  [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:18:25+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:18:29+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_order_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_order_info` WHERE ( `student_id` = 28 ) ORDER BY date desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:18:33+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:18:34+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:18:35+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:18:36+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_order_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_order_info` WHERE ( `student_id` = 28 ) ORDER BY date desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:18:37+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Order&a=order_1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:20:40+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Order&a=order_1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:20:42+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Order&a=order_1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:23+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:24+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:25+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:26+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Index&a=logout
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:27+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:29+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checklogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:31+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=checkmembertype
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:32+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Index&a=login&teacher=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:34+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Index&a=ajaxloginf
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `name` = 'admin' ) AND ( `member_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:35+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Teacher&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userdata D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Wap\032e7b5c551131b59b8e3b258b4fa2a2.php 第 25 行.
+NOTIC: [8] Undefined variable: userdata D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Wap\032e7b5c551131b59b8e3b258b4fa2a2.php 第 26 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:21:37+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Teacher&a=teacher_2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\TeacherAction.class.php 第 77 行.
+SQL: SELECT * FROM `by_demand_order` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT `name` FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_key_word` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_key_word` WHERE ( `key_id` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_demand_order` ORDER BY date desc LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_key_word` WHERE ( `key_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_course` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `by_course` WHERE ( `teacher_id` = '28' ) ORDER BY date desc  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userdata D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Wap\73527ae7b11cfc414cda6421f30cf864.php 第 24 行.
+NOTIC: [8] Undefined variable: userdata D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Wap\73527ae7b11cfc414cda6421f30cf864.php 第 25 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:22:19+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:22:19+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:22:22+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=Index&a=ajaxLogin
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Common\common.php 第 109 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Common\common.php 第 109 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Common\common.php 第 109 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\phpStudy\WWW\dididi5\ThinkPHP\Common\common.php 第 109 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+SQL: SELECT `admin_id`,`admin_name`,`role_id` FROM `by_admin_info` WHERE ( `admin_name` = 'admin' ) AND ( `admin_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `jurisdiction` FROM `by_role_info` WHERE ( `role_id` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:22:24+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = 0 ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '1' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Admin' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Role' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '4' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Admin\IndexAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Activity' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '5' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Admin\IndexAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Service' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '6' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Admin\IndexAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '10' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'StudentDemand' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '13' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargingItem ' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargeStandard' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '16' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'IndexMenu' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '20' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Course' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'CourseType' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'KeyWord' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '22' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Teacher' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 81 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-15T11:22:32+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=Teacher&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Teacher' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = 0 ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '1' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Admin' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Role' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '4' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Activity' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '5' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Service' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '6' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '10' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'StudentDemand' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '13' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargingItem ' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargeStandard' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '16' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'IndexMenu' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '20' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Course' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'CourseType' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'KeyWord' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '22' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Teacher' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `by_member_info` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` LIMIT 0,20   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\93cf240a2b299319aa7046ce3d1b7f10.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\93cf240a2b299319aa7046ce3d1b7f10.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\93cf240a2b299319aa7046ce3d1b7f10.php 第 81 行.
+NOTIC: [8] Undefined index: p_Teacher_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\93cf240a2b299319aa7046ce3d1b7f10.php 第 115 行.
+NOTIC: [8] Undefined variable: residential_quarters D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\93cf240a2b299319aa7046ce3d1b7f10.php 第 123 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:22:37+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=Course&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Course' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = 0 ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '1' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Admin' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Role' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '4' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Activity' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '5' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Service' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '6' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '10' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'StudentDemand' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '13' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargingItem ' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargeStandard' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '16' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'IndexMenu' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '20' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Course' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'CourseType' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'KeyWord' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '22' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Teacher' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_course` [ RunTime:0.003001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `by_course` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_course` LIMIT 0,20   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 81 行.
+NOTIC: [8] Undefined index: p_Course_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 115 行.
+NOTIC: [8] Undefined variable: residential_quarters D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 123 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 153 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 153 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 153 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 153 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 153 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\0c298444852bab8e9b1aa9c8484292b3.php 第 153 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:22:40+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=CourseType&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'CourseType' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = 0 ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '1' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Admin' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Role' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '4' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Activity' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '5' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Service' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '6' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '10' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'StudentDemand' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '13' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargingItem ' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargeStandard' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '16' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'IndexMenu' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '20' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Course' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'CourseType' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'KeyWord' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '22' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Teacher' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) ORDER BY cate_ParentId LIMIT 0,20   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 81 行.
+NOTIC: [8] Undefined index: p_Course_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 115 行.
+NOTIC: [8] Undefined variable: residential_quarters D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 123 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 151 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 153 行.
+NOTIC: [8] Undefined index: person_range D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 155 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 151 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 153 行.
+NOTIC: [8] Undefined index: person_range D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 155 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 151 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 153 行.
+NOTIC: [8] Undefined index: person_range D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 155 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 151 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 153 行.
+NOTIC: [8] Undefined index: person_range D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 155 行.
+NOTIC: [8] Undefined index: course_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 151 行.
+NOTIC: [8] Undefined index: residential_quarters_name D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 153 行.
+NOTIC: [8] Undefined index: person_range D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\95f9821c87fb2e904575211739d724b5.php 第 155 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:22:44+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=ImgShow&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = 0 ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '1' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Admin' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Role' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '4' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Activity' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '5' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Service' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '6' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '10' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'StudentDemand' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '13' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargingItem ' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargeStandard' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '16' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'IndexMenu' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '20' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Course' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'CourseType' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'KeyWord' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '22' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Teacher' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_index_img` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_index_img` ORDER BY img_sort  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\3ef31357dbbe455ff24852eaa4cac642.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\3ef31357dbbe455ff24852eaa4cac642.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\3ef31357dbbe455ff24852eaa4cac642.php 第 81 行.
+NOTIC: [8] Undefined index: rq_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\3ef31357dbbe455ff24852eaa4cac642.php 第 137 行.
+NOTIC: [8] Undefined index: rq_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\3ef31357dbbe455ff24852eaa4cac642.php 第 142 行.
+NOTIC: [8] Undefined index: rq_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\3ef31357dbbe455ff24852eaa4cac642.php 第 137 行.
+NOTIC: [8] Undefined index: rq_id D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\3ef31357dbbe455ff24852eaa4cac642.php 第 142 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-15T11:22:50+08:00 ] 0.0.0.0 /dididi5/index.php?g=Admin&m=ImgShow&a=addImg
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Driver\Db\DbMysql.class.php 第 333 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'addImg' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = 0 ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '1' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Admin' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Role' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '4' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Activity' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '5' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Service' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '6' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\BaseAction.class.php 第 65 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '10' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'StudentDemand' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ParkingLot' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '13' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargingItem ' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ChargeStandard' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '16' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'News' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'ImgShow' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'IndexMenu' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '20' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Course' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'CourseType' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'KeyWord' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT * FROM `by_menu_info` WHERE ( `parent_id` = '22' ) AND ( `is_show` = 1 ) ORDER BY sort asc  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `fm_id` FROM `by_function_module` WHERE ( `fm_action` = 'Teacher' ) AND ( `fm_method` = 'index' ) AND ( `is_show` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_index_img` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: _type D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\Model.class.php 第 583 行.
+SQL: SELECT `img_id`,`residential_quarters` FROM `by_residential_quarters` WHERE ( `is_effective` = 1 )  [ RunTime:0.001000s ]
+ERR: 1146:Table 'by_shop.by_residential_quarters' doesn't exist
+ [ SQL语句 ] : SELECT `img_id`,`residential_quarters` FROM `by_residential_quarters` WHERE ( `is_effective` = 1 ) 
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\ad1a83901a05dd66fe2e395c453c4c69.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\ad1a83901a05dd66fe2e395c453c4c69.php 第 81 行.
+NOTIC: [8] Undefined index: sub_menu_num D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\ad1a83901a05dd66fe2e395c453c4c69.php 第 81 行.
+NOTIC: [8] Undefined variable: img_data D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\ad1a83901a05dd66fe2e395c453c4c69.php 第 123 行.
+NOTIC: [8] Undefined variable: img_data D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\ad1a83901a05dd66fe2e395c453c4c69.php 第 132 行.
+NOTIC: [8] Undefined variable: img_data D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\ad1a83901a05dd66fe2e395c453c4c69.php 第 133 行.
+NOTIC: [8] Undefined variable: img_data D:\phpStudy\WWW\dididi5\App\Runtime\Cache\Admin\ad1a83901a05dd66fe2e395c453c4c69.php 第 140 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$building['build_id']">编辑楼栋信息<else />添加楼栋信息</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="building_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td width="12%">楼栋编号：</td>
+                                        <td width="88%">
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="p_building_number" value="{$building.building_number}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋名称：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="p_building_name" value="{$building.building_name}" maxlength="50" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>所属小区：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_residential_quarters_id" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="residential_quarters" id="rq">
+                                                        <option value="{$rq.rq_id}" <eq name="rq.rq_id" value="$building.residential_quarters_id">selected</eq>>{$rq.residential_quarters}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>单元数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_bu_unit" value="{$building.bu_unit}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>每层户数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_each_layer_household" value="{$building.each_layer_household}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋总户数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_building_total_household" value="{$building.building_total_household}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>电梯数量：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_elevator_number" value="{$building.elevator_number}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋类型：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_building_type_id" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="building_type" id="bt">
+                                                        <option value="{$bt.cp_id}" <eq name="bt.cp_id" value="$building.building_type_id">selected</eq>>{$bt.parameter_val}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>使用性质：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_use_paroperty_id" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="use_paroperty" id="up">
+                                                        <option value="{$up.cp_id}" <eq name="up.cp_id" value="$building.use_paroperty_id">selected</eq>>{$up.parameter_val}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>组团：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_group_id" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="group" id="gr">
+                                                        <option value="{$gr.cp_id}" <eq name="gr.cp_id" value="$building.group_id">selected</eq>>{$gr.parameter_val}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>区域：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_region_id" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="region" id="reg">
+                                                        <option value="{$reg.cp_id}" <eq name="reg.cp_id" value="$building.region_id">selected</eq>>{$reg.parameter_val}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>期数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_period_id" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="period" id="pe">
+                                                        <option value="{$pe.cp_id}" <eq name="pe.cp_id" value="$building.period_id">selected</eq>>{$pe.parameter_val}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>总层数：</td>
+                                        <td>
+                                            <div class="input-group input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_total_layer" value="{$building.total_layer}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>地下层数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_underground_layer" value="{$building.underground_layer}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋高度：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_building_height" value="{$building.building_height}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>备注：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">
+                                                <textarea name="p_remark" class="form-control" style="resize: none;">{$building.remark}</textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$building['build_id']">
+                                    <input type="hidden" name="build_id" value="{$building.build_id}" />
+                                    <input type="button" class="btn btn-info building" value="编辑" data-url="{:U('Admin/Building/ajaxEditBuilding')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info building" value="添加" data-url="{:U('Admin/Building/ajaxAddBuilding')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+
+        $('.building').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+            //楼栋编号
+            var p_building_number = $('input[name="p_building_number"]');
+            var p_building_number_val = $.trim(p_building_number.val());
+            if (p_building_number_val.length == 0) {
+                layer.alert('请输入楼栋编号', {icon: 2, time: 2000,
+                    end: function () {
+                        p_building_number.focus();
+                        p_building_number.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_building_number.focus();
+                        p_building_number.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //楼栋名称
+            var p_building_name = $('input[name="p_building_name"]');
+            var p_building_name_val = $.trim(p_building_name.val());
+            if (p_building_name_val.length == 0) {
+                layer.alert('请输入楼栋名称', {icon: 2, time: 2000,
+                    end: function () {
+                        p_building_name.focus();
+                        p_building_name.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_building_name.focus();
+                        p_building_name.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //所属小区
+            var p_residential_quarters_id = $('select[name="p_residential_quarters_id"]');
+            var p_residential_quarters_id_val = $.trim(p_residential_quarters_id.val());
+            if (p_residential_quarters_id_val == 0) {
+                layer.alert('请选择所属小区', {icon: 2, time: 2000,
+                    end: function () {
+                        p_residential_quarters_id.focus();
+                        p_residential_quarters_id.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_residential_quarters_id.focus();
+                        p_residential_quarters_id.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var re = /^[1-9]\d*$/;
+            var rep = /^[0-9]\d*\.\d*[0-9]\d*$/;
+
+            //单元数
+            var p_bu_unit = $('input[name="p_bu_unit"]');
+            var p_bu_unit_val = $.trim(p_bu_unit.val());
+            if (p_bu_unit_val.length != 0 && !(re.test(p_bu_unit_val))) {
+                layer.alert('单元数有误', {icon: 2, time: 2000,
+                    end: function () {
+                        p_bu_unit.focus();
+                        p_bu_unit.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_bu_unit.focus();
+                        p_bu_unit.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //每层户数
+            var p_each_layer_household = $('input[name="p_each_layer_household"]');
+            var p_each_layer_household_val = $.trim(p_each_layer_household.val());
+            if (p_each_layer_household_val.length != 0 && !(re.test(p_each_layer_household_val))) {
+                layer.alert('每层户数有误', {icon: 2, time: 2000,
+                    end: function () {
+                        p_each_layer_household.focus();
+                        p_each_layer_household.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_each_layer_household.focus();
+                        p_each_layer_household.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //楼栋总户数
+            var p_building_total_household = $('input[name="p_building_total_household"]');
+            var p_building_total_household_val = $.trim(p_building_total_household.val());
+            if (p_building_total_household_val.length != 0 && !(re.test(p_building_total_household_val))) {
+                layer.alert('楼栋总户数有误', {icon: 2, time: 2000,
+                    end: function () {
+                        p_building_total_household.focus();
+                        p_building_total_household.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_building_total_household.focus();
+                        p_building_total_household.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //电梯数量
+            var p_elevator_number = $('input[name="p_elevator_number"]');
+            var p_elevator_number_val = $.trim(p_elevator_number.val());
+            if (p_elevator_number_val.length != 0 && !(re.test(p_elevator_number_val))) {
+                layer.alert('电梯数量有误', {icon: 2, time: 2000,
+                    end: function () {
+                        p_elevator_number.focus();
+                        p_elevator_number.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_elevator_number.focus();
+                        p_elevator_number.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+            
+            //总层数
+            var p_total_layer = $('input[name="p_total_layer"]');
+            var p_total_layer_val = $.trim(p_total_layer.val());
+            if (p_total_layer_val.length != 0 && !(re.test(p_total_layer_val))) {
+                layer.alert('单元数有误', {icon: 2, time: 2000,
+                    end: function () {
+                        p_total_layer.focus();
+                        p_total_layer.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_total_layer.focus();
+                        p_total_layer.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+            
+            //楼栋高度
+            var p_building_height = $('input[name="p_building_height"]');
+            var p_building_height_val = $.trim(p_building_height.val());
+            if (p_building_height_val.length != 0 && !(re.test(p_building_height_val))) {
+                layer.alert('楼栋高度有误', {icon: 2, time: 2000,
+                    end: function () {
+                        p_building_height.focus();
+                        p_building_height.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_building_height.focus();
+                        p_building_height.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //楼栋高度
+            var p_building_height = $('input[name="p_building_height"]');
+            var p_building_height_val = $.trim(p_building_height.val());
+            if (p_building_height_val.length != 0 && !(rep.test(p_building_height_val) || re.test(p_building_height_val))) {
+                layer.alert('楼栋高度有误', {icon: 2, time: 2000,
+                    end: function () {
+                        p_building_height.focus();
+                        p_building_height.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_building_height.focus();
+                        p_building_height.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var data = $('#building_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

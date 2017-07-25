@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>发布学习需求</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/mui.picker.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container student-3">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+    	<a href="javascript:void(0);" onclick="leftcolumn();"><span class="user"></span></a>
+        <a href="javascript:void(0);" onclick = ""><span class="title ">发布学习需求</span></a>	
+        <a href="student_2.html" onclick = ""><span class="message"></span></a>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- 隐藏栏 -->
+    <div class="left-hide-column-bg"></div>
+	<div class="left-hide-column ">
+	    <div class="bar1">
+	        <img src="images/user/user.png">
+	        <p>130****7123</p>
+	        <span><i class="icon icon-vip"></i>普通会员</span>
+	    </div>
+	    <div class="bar2">
+	        <a href="user_1.html"><i class="icon icon-i1"></i><span>课程</span></a>
+	        <a href="user_2.html"><i class="icon icon-i2"></i><span>卡包</span></a>
+	        <a href="student_2.html"><i class="icon icon-i3"></i><span>消息</span></a>
+	        <a href="user_3.html"><i class="icon icon-i4"></i><span>设置</span></a>
+	    </div>
+	    <div class="bar3">
+	        <a href="#"><img src="images/user/b1.png"><p>用户指南</p></a>
+	        <a href="user_4.html"><img src="images/user/b2.png"><p>邀请好友</p></a>
+	        <a href="index_login_2.html"><img src="images/user/b3.png"><p>老师招募</p></a>
+	        <a href="#"><img src="images/user/b4.png"><p>最新活动</p></a>
+	        <a href="#"><img src="images/user/b5.png"><p>客服</p></a>
+	    </div>
+	</div>
+    
+
+    <!-- page -->
+    <div class = "page">
+        <div class="bar">
+            <div class="b1">
+                <div>已选"课内辅导"</div>
+                <div style="position: absolute;right: 0;"><a href="#">更改学习类别<img src="images/yanse.png" alt=""></a></div>
+            </div>
+            <div class="b2"></div>
+            <div class="b3">
+                <div><label>一对一<input type="radio" name="a"></label></div>
+                 <div><label>找附近<input type="radio" name="a"></label></div>
+                 <div><label>环境好<input type="radio" name="a"></label></div>
+                <p>可在备注中填写具体要求</p>
+            </div>
+            <div class="b4">
+                <span>备注：</span>
+                <div ><textarea spellcheck=""></textarea>
+                </div>
+
+            </div>
+            <div class="b5">
+                <div>
+                    <div class="toggle ">
+                        &nbsp;现在
+                            <div class="toggle-handle"></div>
+                            &nbsp;&nbsp;预约
+                    </div>
+                </div>
+                
+                <div  class="c">
+                    <a href="#" >确认发布</a>
+                    <span><a href="#">未成功发布怎么办？</a></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/ratchet.min.js"></script>
+<script type="text/javascript">
+function leftcolumn()
+{
+	$(".left-hide-column-bg").toggle();
+	$(".left-hide-column").animate({left:'0px'},50);
+}
+
+$(".left-hide-column-bg").on("click",function(){
+	$(".left-hide-column-bg").toggle();
+	$(".left-hide-column").animate({left:'-250px'},0);
+});
+
+
+</script>
+
+<script src="js/mui.min.js"></script>
+<script src="js/mui.picker.min.js"></script>
+<script src="js/data.city.js"></script>
+<script>
+    
+    //选择省市区
+    var city_picker = new mui.PopPicker({layer:3});
+    city_picker.setData(init_city_picker);
+</script>
+
+
+</html>

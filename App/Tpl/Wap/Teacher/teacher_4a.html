@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>我关注的课程</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container teacher-4">
+    <!-- header -->
+    <header class="header">
+        <a href="{:U('Wap/Teacher/teacher_1')}" onclick = "history.go(-1);"><span class="back type1"></span></a>
+        <span class="title ">我关注的课程</span>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+
+        <div class="bar">
+            <ul>
+                <volist name='typeData' id='wo'>
+                <li>
+                    <a href="#">
+                        <div >{$wo.cate_Name}</div>
+                        <i></i>
+                    </a>
+                </li>
+                </volist>
+<!--                 <li>
+                    <a href="#">
+                        <div >英语</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >书法</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >音乐</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >中学辅导</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >物理</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >物理</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >物理</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >物理</div>
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div >物理</div>
+                        <i></i>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="bar">
+            <input type= "text" name="" placeholder="添加更多订阅" style="padding-left: 5px;">
+        </div>
+        
+        <div class="order-btn">
+            <a href="#">确认提交</a>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+</script>
+</html>

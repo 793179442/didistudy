@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>用户 - 编辑个人资料</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+<div class = "container user-1">
+    <!-- header -->
+    <header class="header b1">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="top-left-back"></span></a>
+        <span class="top-text">编辑资料</span>
+        <a href="javascript:void(0);" onclick = "submit();"><span class="top-right-yes"></span></a>
+    </header>
+    <div class="header-height"></div>
+
+
+
+
+    <!-- page -->
+    <div class = "page">
+        <form action="#" method="post" id ="form1" >
+            <div class="item" style="text-align: center;margin-top: 20px;border:0;">
+                <input type="file" name="" id = "file" style="display: none">
+                <a href="javascript:void(0);" onclick = "file()">
+                    <img src="images/user/user.png">
+                </a>
+            </div>
+            <div class="item">
+                <span>名字</span>
+                <span class="r">枫</span>
+            </div>
+            <div class="item">
+                <span>关于我</span>
+                <span class="r">
+                    <input type="text" name="" placeholder="未填写">
+                </span>
+            </div>
+            <div class="item" style="margin-top:20px;">
+                <span>公司/组织</span>
+                <span class="r">
+                    <input type="text" name="" placeholder="未填写">
+                </span>
+            </div>
+            <div class="item">
+                <span>职业/职称</span>
+                <span class="r">
+                    <input type="text" name="" placeholder="未填写">
+                </span>
+            </div>
+            <div class="item">
+                <span>地区</span>
+                <span class="r">
+                    <input type="text" name="" placeholder="未选择">
+                </span>
+            </div>
+            <div class="item" style="margin-top:20px;">
+                <span>性别</span>
+                <span class="r">
+                男
+                </span>
+            </div>
+            <div class="item">
+                <span>生日</span>
+                <span class="r">
+                    <input type="text" name="" placeholder="未选择">
+                </span>
+            </div>
+
+        </form>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    function file()
+    {
+        $("#file").click();
+    }
+    function submit()
+    {
+        $("#form1").submit();
+    }
+</script>
+</html>

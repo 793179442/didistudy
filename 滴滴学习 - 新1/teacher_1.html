@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>老师</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f7f6fb;">
+<div class = "container teacher-1">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type3"></span></a>
+        <div class="teacher-top-nav">
+            <a href="teacher_1.html" class="active">订单</a>
+            <a href="teacher_2.html">接单</a>
+        </div>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div class="bar">
+            <div class="a" style="position: relative;">
+                <div><img src="images/user/user.png"></div>
+                <div style="font-size: 16px;">谢老师<i></i><span>认证机构注册用户</span></div>
+                <div style="    float: right;"><a href="#" style="border: 1px solid #c9c9c9;font-size: 14px;color: #737373;border-radius: 2px;padding: 5px;position: absolute;right:0;margin-top: 5px;">管理中心</a></div>
+            </div>
+            
+            <div class="notice">
+                <div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">李**同学提交的学习需求已接单</div>
+                            <div class="swiper-slide">黄**同学提交的学习需求已接单</div>
+                            <div class="swiper-slide">林**同学提交的学习需求已接单</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="b"><p>最新学习需求</p><a href="#">更改我关注的课程</a><span><a href="#">刷新</a></span></div>
+            <ul class="item-xq-bg">
+                    <li style="border-top: 1px solid #e2e2e2;"><a href="#"><i></i>初一初二物理，珠江楼附近，环境</a></li>
+                    <li><a href="#"><i></i>高一物理，苏宁广场附近，一对一辅导</a></li>
+                    <li><a href="#"><i></i>初三英语，人民广场附近，上门辅导</a></li>
+            </ul>
+            <div class="teacher-more">
+                <a href="#">展开更多<i></i></a>
+            </div>
+        </div>
+        <div class="bar">
+            <p>附近</p>
+            <div class="c">
+                <a href="#">阳光海岸附近5人</a>
+                <a href="#">苏宁广场附近5人</a>
+                <a href="#">明珠广场附近5人</a>
+                <a href="#">人民广场附近5人</a>
+            </div>
+        </div>
+
+        <div class="teacher-bottom-nav">
+            <div class="a"><a href="#">核销课程</a></div>
+            <div class="b"><a href="#">开启接单</a></div>
+            <div class="c"><a href="teacher_5.html">设置模式</a></div>
+        </div>
+    </div>  
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+var swiper = new Swiper('.swiper-container', {
+        paginationClickable: true,
+        autoHeight: true, //enable auto height
+        direction: 'vertical',
+        loop : true,
+        autoplay: 3000,
+        // autoplayDisableOnInteraction: false
+});
+</script>
+</html>

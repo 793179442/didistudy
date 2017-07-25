@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$parking['parking_id']">编辑停车场信息<else />添加停车场信息</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="parking_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td width="12%">所属小区：</td>
+                                        <td width="88%">
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_residential_quarters_id" class="form-control">
+                                                    <option value="-1">--请选择--</option>
+                                                    <volist name="residential_quarters" id="rq">
+                                                        <option value="{$rq.rq_id}" <eq name="rq.rq_id" value="$parking.residential_quarters_id">selected</eq>>{$rq.residential_quarters}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>停车场名称：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="p_parking_name" value="{$parking.parking_name}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>停车场类别：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <select name="p_parking_type" class="form-control">
+                                                    <option value="-1">--请选择--</option>
+                                                    <volist name="parking_type_list" id="p_type">
+                                                        <option value="{$i}" <eq name="parking.parking_type" value="$i">selected</eq>>{$p_type}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>车辆类别：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <select name="p_vehicle_type" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="vehicle_type_list" id="v_type">
+                                                        <option value="{$i}" <eq name="parking.sex" value="$i">selected</eq>>{$v_type}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>备注：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">
+                                                <textarea name="p_remark" class="form-control" style="resize: none;">{$parking.remark}</textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$parking['parking_id']">
+                                    <input type="hidden" name="parking_id" value="{$parking.parking_id}" />
+                                    <input type="button" class="btn btn-info parking" value="编辑" data-url="{:U('Admin/Parking/ajaxEditParking')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info parking" value="添加" data-url="{:U('Admin/Parking/ajaxAddParking')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+
+        $('.parking').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+            //所属小区
+            var p_residential_quarters_id = $('select[name="p_residential_quarters_id"]');
+            var p_residential_quarters_id_val = $.trim(p_residential_quarters_id.val());
+            if (p_residential_quarters_id_val == 0) {
+                layer.alert('请选择所属小区', {icon: 2, time: 2000,
+                    end: function () {
+                        p_residential_quarters_id.focus();
+                        p_residential_quarters_id.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_residential_quarters_id.focus();
+                        p_residential_quarters_id.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            //停车场名称
+            var p_parking_name = $('input[name="p_parking_name"]');
+            var p_parking_name_val = $.trim(p_parking_name.val());
+            if (p_parking_name_val.length == 0) {
+                layer.alert('请输入停车场名称', {icon: 2, time: 2000,
+                    end: function () {
+                        p_parking_name.focus();
+                        p_parking_name.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_parking_name.focus();
+                        p_parking_name.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+            
+            //停车场类别
+            var p_parking_type = $('select[name="p_parking_type"]');
+            var p_parking_type_val = $.trim(p_parking_type.val());
+            if (p_parking_type_val == -1) {
+                layer.alert('请选择停车场类型', {icon: 2, time: 2000,
+                    end: function () {
+                        p_parking_type.focus();
+                        p_parking_type.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_parking_type.focus();
+                        p_parking_type.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+            
+            //车辆类别
+            var p_vehicle_type = $('select[name="p_vehicle_type"]');
+            var p_vehicle_type_val = $.trim(p_vehicle_type.val());
+            if (p_vehicle_type_val == -1) {
+                layer.alert('请选择性别或单位', {icon: 2, time: 2000,
+                    end: function () {
+                        p_vehicle_type.focus();
+                        p_vehicle_type.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        p_vehicle_type.focus();
+                        p_vehicle_type.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var data = $('#parking_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

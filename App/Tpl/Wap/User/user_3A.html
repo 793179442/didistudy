@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>设置</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container user-3">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+        <span class="title ">设置</span>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div>
+            <ul class="item-more-bg">
+                <li>
+                    <a href="#">账号与安全</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="item-more-bg">
+                <li><a href="#">联系地址</a></li>
+                <li><a href="#">家长联系</a></li>
+            </ul>
+        </div>
+        <div class="switch-btn">
+            <ul>
+                <li>
+                    <span>课程推送</span>
+                    <span style="color: #949494;">打开后地图将显示实时路况</span>
+                    <div> 
+                        <div class="toggle active">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span>音效提示</span>
+                    <span style="color: #949494;">打开后将有语音提示新消息</span>
+                    <div > 
+                        <div class="toggle active">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="item-more-bg">
+                <li><a href="#">用户指南</a></li>
+                <li><a href="#">给好评</a></li>
+                <li><a href="#">法律条款</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </div>
+        <div>
+            <a data-outurl='{:U("Wap/Index/index")}' data-url='{:U("Wap/Index/logout")}'  href="javascript:void(0);"  class="close">退出登录</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+<script src="__WAP__/js/ratchet.min.js"></script>
+<script type="text/javascript">
+
+$('.close').click(function(){
+    var url=$(this).data('url');
+    var outurl=$(this).data('outurl');
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'post',
+                  
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                          
+                                    window.location.href = outurl;
+                            
+                        } else {
+                            layer.open({content: data.info, time: 2});
+                            _this.attr('disabled', false);
+                        }
+                    }
+                });    
+});
+window.addEventListener("click", function(b) {
+        a(b.target) && b.preventDefault()
+});
+</script>
+</html>

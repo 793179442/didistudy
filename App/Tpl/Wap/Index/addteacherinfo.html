@@ -1,0 +1,229 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta name="Generator" content="tpshop" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>机构</title>
+
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <link rel="stylesheet" href="__WAP__/css/layer.css">
+        <style>
+            .childselect{display: none;}
+        </style>
+    </head>
+    <body>
+        <header id="header" class='header'>
+            <div class="h-left"><a href="javascript:history.back(-1)" class="back"></a></div>
+            <div class="h-mid">信息填选</div>
+        </header>
+        <div id="tbh5v0">
+            <div class="log_reg_box">
+                <div id="logRegTabCon">
+                    <div class="log_reg_item" id="phonearea">
+                        <form action="" id="sc_register_form" method="post">
+                        	<!-- <input type="hidden" name="spread_id" value="{$Think.get.sid}" /> -->
+<!--                             <div class="field phone">
+                                <input type="text" name="sc_phone" placeholder="手机号码" class="c-form-txt-normal" />
+                            </div> -->
+                            <div class="field phone">
+                                <input type="text" name="name" placeholder="姓名" class="c-form-txt-normal" />
+                            </div>
+                            <div class="field phone">
+                                <input type="radio" value="1" name="member_type" placeholder="性别" class="c-form-txt-normal" />老师
+                                <input type="radio" value="2" name="member_type" placeholder="性别" class="c-form-txt-normal" />机构
+                            </div>
+                            <input type="hidden" name='member_id' value="<?php echo $_GET['member_id']; ?>">
+                            简介
+                            <div class="field phone">
+
+                              <textarea  name="remark" placeholder="老师简介" class="c-form-txt-normal" ></textarea>
+                            </div>
+<!--                             自己分类
+                            <div class="field phone divgetchildselect">
+                                <select name="self_type[]" id="" class="parentselect" data-url="{:U('Wap/Index/getchildtype')}">
+                                    <option value="nocheck">请选择</option>
+                                    <volist name='typedata' id="vo" > 
+                                    <option  value="{$vo.cate_Id}">{$vo.cate_Name}</option>
+                                     
+                                     </volist>
+                                </select>
+                                <select name="" id="" class="childselect">
+                                    <volist name='typedata' id="vo" > 
+                                    <option  value="{$vo.cate_Id}">{$vo.cate_Name}</option>
+                                     
+                                     </volist>
+                                </select>
+                                <select name="" id="" class="childselect">
+                                    <volist name='typedata' id="vo" > 
+                                    <option  value="{$vo.cate_Id}">{$vo.cate_Name}</option>
+                                     
+                                     </volist>
+                                </select>
+                                <select name="" id="" class="childselect">
+                                    <volist name='typedata' id="vo" > 
+                                    <option  value="{$vo.cate_Id}">{$vo.cate_Name}</option>
+                                     
+                                     </volist>
+                                </select>
+                                <select name="" id="" class="childselect">
+                                    <volist name='typedata' id="vo" > 
+                                    <option  value="{$vo.cate_Id}">{$vo.cate_Name}</option>
+                                     
+                                     </volist>
+                                </select>
+                            </div>
+                            关注分类
+                            <div class="field phone divgetchildselect2">
+                                <select name="concern_type[]" id="" class="parentselect2" data-url="{:U('Wap/Index/getchildtype')}">
+                               <option value="nocheck">请选择</option>
+                                <volist name='typedata' id="vo" >
+
+                                   <option value="{$vo.cate_Id}">{$vo.cate_Name}</option>
+                                    </volist>
+                                     
+                                </select>
+                            </div> -->
+<!--                     		<input type="hidden" name="referurl" value="{$referurl}"/>
+                            <div class="field pwd">
+                                <input type="password" name="sc_password" placeholder="密码" class="c-form-txt-normal" />
+                            </div>
+                            <div class="field pwd">
+                                <input type="password" id="password2" name="sc_re_password" placeholder="确认密码" class="c-form-txt-normal" />
+                            </div>
+ -->
+<!--                             <div class="yanzheng"  style=" margin-top:0px;">
+                                <div class="codeTxt">
+                                    <input type="text" id="mobile_code"  name="mobile_code" placeholder="手机验证码" />
+                                </div>
+                                <div class="codePhoto">
+                                    <input id="zphone" type="button" value="发送手机验证码 " class="zphone" style=" color:#FFF" />
+                                </div>
+                            </div> -->
+                            <input type="button" class="btn_big1 sc_register" value="提交" data-url="{:U('Wap/Index/ajaxaddteacherinfo')}" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+    </body>
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+<!-- <script src="Public/Admin/js/ajaxfileupload.js"></script> -->
+<script src="__WAP__/js/layer.js"></script>
+<script type="text/javascript">
+
+$('.sc_register').click(function () {
+
+
+                var _this = $(this);
+                _this.attr('disabled', true);
+
+                var data = $('#sc_register_form').serialize();
+
+                var url = _this.data('url');
+
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'post',
+                    data: data,
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.open({content: data.info, time: 2,
+                                end: function () {
+                                    window.location.href = data.url;
+                                }});
+                        } else {
+                            layer.open({content: data.info, time: 2});
+                            _this.attr('disabled', false);
+                        }
+                    }
+                });
+});
+$('.divgetchildselect').on('change','.parentselect',function(){
+                var parent_id=$(this).val();
+                var url=$(this).data("url");
+                var _this=$(this);
+                var index01=_this.index();
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'get',
+                    data: {parent_id:parent_id},
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                                var str='<select name="self_type" id="" class="parentselect" data-url="{:U("Wap/Index/getchildtype")}">';
+                                $.each(data.childtypedata,function(index,value){
+                                    str+='<option value='+value['cate_Id']+'>'+value['cate_Name']+'</option>'
+                                });
+                                str+='</select>'
+                               $('.divgetchildselect').find(".parentselect:gt("+index01+")").remove();
+                               $('.divgetchildselect').append(str);
+                        } else {
+                            // layer.open({content: data.info, time: 2});
+                            // _this.attr('disabled', false);
+                        }
+                    }
+                });   
+});
+$('.divgetchildselect2').on('change','.parentselect2',function(){
+                var parent_id=$(this).val();
+                var url=$(this).data("url");
+                var _this=$(this);
+                var index01=_this.index();
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'get',
+                    data: {parent_id:parent_id},
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                                var str='<select name="concern_type" id="" class="parentselect2" data-url="{:U("Wap/Index/getchildtype")}">';
+                                $.each(data.childtypedata,function(index,value){
+                                    str+='<option value='+value['cate_Id']+'>'+value['cate_Name']+'</option>'
+                                });
+                                str+='</select>'
+                               $('.divgetchildselect2').find(".parentselect2:gt("+index01+")").remove();
+                               $('.divgetchildselect2').append(str);
+                        } else {
+                            // layer.open({content: data.info, time: 2});
+                            // _this.attr('disabled', false);
+                        }
+                    }
+                });   
+});
+// $('.parentselect').change(function(){
+//                 var parent_id=$(this).val();
+//                 var url=$(this).data("url");
+//                 $.ajax({
+//                     url: url,
+//                     async: true,
+//                     type: 'get',
+//                     data: {parent_id:parent_id},
+//                     dataType: 'json',
+//                     contentType: "application/x-www-form-urlencoded; charset=utf-8",
+//                     success: function (data, status) {
+//                         if (data.status == 1) {
+//                                 var str='<select name="" id="" class="parentselect" data-url="{:U("Wap/Index/getchildtype")}">';
+//                                 $.each(data.childtypedata,function(index,value){
+//                                     str+='<option value='+value['cate_Id']+'>'+value['cate_Name']+'</option>'
+//                                 });
+//                                 str+='</select>'
+//                                $('.divgetchildselect').append(str);
+//                         } else {
+//                             layer.open({content: data.info, time: 2});
+//                             _this.attr('disabled', false);
+//                         }
+//                     }
+//                 });
+// });
+        </script>
+</html>

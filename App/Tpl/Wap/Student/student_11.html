@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>学生</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<style type="text/css">
+    .my-map {
+        margin: 0 auto;
+        width: 600px;
+        height: 600px;
+    }
+
+    .my-map .icon {
+        background: url(http://lbs.amap.com/console/public/show/marker.png) no-repeat;
+    }
+
+    .my-map .icon-cir {
+        height: 31px;
+        width: 28px;
+    }
+
+    .my-map .icon-cir-blue {
+        background-position: -11px -55px;
+    }
+
+    .my-map .icon-cir-red {
+        background-position: -11px -5px;
+    }
+
+    .my-map .icon-cir-yellow {
+        background-position: -11px -105px;
+    }
+
+    #wrap {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button-group {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .button-group .button {
+        height: 28px;
+        line-height: 28px;
+        background-color: #0D9BF2;
+        color: #FFF;
+        border: 0;
+        outline: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+
+    .button-group .inputtext {
+        height: 26px;
+        line-height: 26px;
+        border: 1px;
+        outline: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+
+    #tip {
+        background-color: #fff;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        font-size: 12px;
+        right: 10px;
+        top: 20px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+    }
+
+    .amap-info-content {
+        font-size: 12px;
+    }
+
+    #myPageTop {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #ccc;
+        margin: 10px auto;
+        padding: 6px;
+        font-family: "Microsoft Yahei", "微软雅黑", "Pinghei";
+        font-size: 14px;
+    }
+
+    #myPageTop label {
+        margin: 0 20px 0 0;
+        color: #666666;
+        font-weight: normal;
+    }
+
+    #myPageTop input {
+        width: 170px;
+    }
+
+    #myPageTop .column2 {
+        padding-left: 25px;
+    }
+
+    .student_demand li a {
+        float: right;
+        color: red;
+    }
+
+    .btn-teacher-logn {
+        display: block;
+        padding: 5px 55px;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #eb6101;
+        width: 69px;
+        margin: auto;
+    }
+
+    /*.b ul li{max-width: 220px;}*/
+</style>
+<body style="background-color: #f3f4f6;">
+<div class="container student-1">
+    <!-- header -->
+    <header class="header">
+        <!--  <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a> -->
+        <a href="javascript:void(0);" onclick="leftcolumn();"><span class="user"></span></a>
+        <a href="javascript:void(0);" onclick="didian();"><span class="title ">汕头市<i class="icon icon-more1"></i></span></a>
+        <a href="{:U('Wap/Student/student_2')}" onclick=""><span class="message"></span></a>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- 隐藏栏 -->
+    <include file='Public:menu'/>
+
+    <!--地点 -->
+    <div class="location">
+        <div class="i">
+            <input type="text" name="" placeholder="请输入所在城市">
+            <span class="close-location">取消</span>
+        </div>
+        <div style="height:45px;"></div>
+        <div class="m">当前定位城市：<span class="m-name"></span></div>
+        <div class="anchor"></div>
+        <div class="item">
+            <span id="aaa" class="offset"></span>
+            <p><img src="__WAP__/images/xing.png"></p>
+            <ul>
+                <li>北京市</li>
+                <li>上海市</li>
+                <li>广州市</li>
+                <li>深圳市</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 分类 -->
+
+    <div class="fenlei">
+        <div class="a">
+            全部服务
+            <span class="icon icon-close"></span>
+        </div>
+        <div class="b">
+            <ul>
+                <li><img src="__WAP__/images/student/f1.png">
+                    <div>课内辅导</div>
+                </li>
+                <li style="border-left: 1px solid #ececec;border-right: 1px solid #ececec;"><img
+                        src="__WAP__/images/student/f2.png">
+                    <div>口语/留学</div>
+                </li>
+                <li><img src="__WAP__/images/student/f3.png">
+                    <div>艺术</div>
+                </li>
+                <li><img src="__WAP__/images/student/f4.png">
+                    <div>早教/学前</div>
+                </li>
+                <li style="border-left: 1px solid #ececec;border-right: 1px solid #ececec;"><img
+                        src="__WAP__/images/student/f5.png">
+                    <div>设计/IT</div>
+                </li>
+                <li><img src="__WAP__/images/student/f6.png">
+                    <div>健体</div>
+                </li>
+                <li><img src="__WAP__/images/student/f7.png">
+                    <div>职训/管理</div>
+                </li>
+                <li style="border-left: 1px solid #ececec;border-right: 1px solid #ececec;"><img
+                        src="__WAP__/images/student/f8.png">
+                    <div>实用技能</div>
+                </li>
+                <li><img src="__WAP__/images/student/f9.png">
+                    <div>生活/品味</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- page -->
+    <div class="page">
+        <div class="menu">
+            <volist name='levelOnetype' id="vos">
+                <div><a href="#" style="color:#eb6101;">{$vos.cate_Name}</a></div>
+            </volist>
+            <!--             <div><a href="#">口语</a></div>
+                        <div><a href="#">艺术</a></div>
+                        <div><a href="#">早教</a></div> -->
+            <div style="position:  absolute;right: 5px;"><a href="javascript:void(0);" onclick="fenlei();"><img
+                    src="__WAP__/images/yanse.png"></a></div>
+            <div class="clear"></div>
+        </div>
+        <div class="student_demand">
+            <h2 style="font-weight:normal">需求信息:</h2>
+            <br>
+            <ul>
+                <volist name='demand_data' id='dd'>
+                    <li>{$dd.date=|date='Y-m-d',###}&nbsp;&nbsp;{$dd.course_name} <a
+                            href="{:U('Wap/Student/student_2',array('demand_id'=>$dd['demand_id']))}">详细</a></li>
+                </volist>
+            </ul>
+        </div>
+        <div style="display: none;" class="ditu">
+            <div id="wrap" class="my-map">
+            </div>
+        </div>
+
+
+        <div style="height:128px;"></div>
+        <div class="bar">
+            <div class="a">
+                <div class="i"><a href="#"><img src="__WAP__/images/didian.png"></a></div>
+                <div class="c"><i></i><a class="sefe"></a><span>（当前位置）</span></div>
+            </div>
+            <div class="b">
+                <div class="i"><a href="#"><img src="__WAP__/images/kefu.png"></a></div>
+                <div class="c"><a href="{:U('Wap/Student/student_3')}">一键发布学习需求</a><span><i></i>坐等老师为您提供更专业学习方案</span>
+                </div>
+            </div>
+            <notempty name="isteacher"><a class='btn-teacher-logn ' href="{:U('Wap/Index/ajaxteacherlogin')}">教师登录</a>
+            </notempty>
+
+            <input type="hidden" class="se1">
+            <input type="hidden" class="se2">
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+<script src="__WAP__/js/map.js"></script>
+<script type="text/javascript">
+
+
+    $('.anchor img').attr('src', "__WAP__/images/xing.png");
+    $('.location').on('click', '.item ul li', function () {
+        var val = $(this).html();
+
+        val = val + '<i class="icon icon-more1"></i>';
+        $('.title').html(val);
+        $('.location').slideUp('2000');
+    });
+
+
+    $.fn.start("location");
+    $(".location").toggle();
+    $(".m-name").html($(".header .title").html());
+</script>
+<script type="text/javascript">
+    function leftcolumn() {
+        $(".left-hide-column-bg").toggle();
+        $(".left-hide-column").animate({left: '0px'}, 50);
+    }
+
+    $(".left-hide-column-bg").on("click", function () {
+        $(".left-hide-column-bg").toggle();
+        $(".left-hide-column").animate({left: '-250px'}, 0);
+    });
+
+    function fenlei() {
+        $(".fenlei").toggle();
+    }
+    $(".icon-close").on("click", function () {
+        $(".fenlei").toggle();
+    });
+
+
+    function didian() {
+        $(".location").toggle();
+    }
+    $(".close-location").on("click", function () {
+        $(".location").toggle();
+    });
+</script>
+
+<script src="http://webapi.amap.com/maps?v=1.3&key=bc3f0ab5389583079e988fa131f23c3c"></script>
+<script>
+
+    !function () {
+        var x = '';
+        var y = '';
+        ///
+        var infoWindow, map, level = 18,
+            center = {lng: 116.704667, lat: 23.371732},
+            features = [{
+                type: "Marker",
+                name: "老师",
+                desc: "老师",
+                color: "blue",
+                icon: "cir",
+                offset: {x: -9, y: -31},
+                lnglat: {lng: 116.70464, lat: 23.371402}
+            },
+                {
+                    type: "Marker",
+                    name: "机构",
+                    desc: "机构",
+                    color: "red",
+                    icon: "cir",
+                    offset: {x: -9, y: -31},
+                    lnglat: {lng: 116.704986, lat: 23.371126}
+                },
+                {
+                    type: "Marker",
+                    name: "测试",
+                    desc: "测试",
+                    color: "yellow",
+                    icon: "cir",
+                    offset: {x: -9, y: -31},
+                    lnglat: {lng: 116.704667, lat: 23.371732}
+                }];
+
+        function loadFeatures() {
+            for (var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++) {
+                data = features[i];
+                switch (data.type) {
+                    case "Marker":
+                        feature = new AMap.Marker({
+                            map: map,
+                            position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+                            zIndex: 3,
+                            extData: data,
+                            offset: new AMap.Pixel(data.offset.x, data.offset.y),
+                            title: data.name,
+                            content: '<div class="icon icon-' + data.icon + ' icon-' + data.icon + '-' + data.color + '"></div>'
+                        });
+                        break;
+                    case "Polyline":
+                        for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polyline({
+                            map: map,
+                            path: path,
+                            extData: data,
+                            zIndex: 2,
+                            strokeWeight: data.strokeWeight,
+                            strokeColor: data.strokeColor,
+                            strokeOpacity: data.strokeOpacity
+                        });
+                        break;
+                    case "Polygon":
+                        for (j = 0, jl = data.lnglat.length, path = []; j < jl; j++) {
+                            path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                        }
+                        feature = new AMap.Polygon({
+                            map: map,
+                            path: path,
+                            extData: data,
+                            zIndex: 1,
+                            strokeWeight: data.strokeWeight,
+                            strokeColor: data.strokeColor,
+                            strokeOpacity: data.strokeOpacity,
+                            fillColor: data.fillColor,
+                            fillOpacity: data.fillOpacity
+                        });
+                        break;
+                    default:
+                        feature = null;
+                }
+                if (feature) {
+                    AMap.event.addListener(feature, "click", mapFeatureClick);
+                }
+            }
+        }
+
+        function mapFeatureClick(e) {
+            if (!infoWindow) {
+                infoWindow = new AMap.InfoWindow({autoMove: true});
+            }
+            var extData = e.target.getExtData();
+            infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+            infoWindow.open(map, e.lnglat);
+            if (extData.name == "老师") {
+                window.location.href = "course_1.html";
+            }
+            if (extData.name == "机构") {
+                window.location.href = "course_2.html";
+            }
+            if (extData.name == "测试") {
+            }
+        }
+
+        map = new AMap.Map("wrap", {center: new AMap.LngLat(center.lng, center.lat), level: level});
+
+        loadFeatures();
+
+        map.on('complete', function () {
+            map.plugin(["AMap.ToolBar", "AMap.Scale"], function () {
+                map.addControl(new AMap.ToolBar);
+                map.addControl(new AMap.Scale);
+            });
+        })
+
+        var height = window.innerHeight;//拿到窗口大小
+
+        $("#wrap").css("height", height - 90 - 128);
+        /////定位
+        var map, geolocation;
+        //加载地图，调用浏览器定位服务
+        map = new AMap.Map('container', {
+            resizeEnable: true
+        });
+        map.plugin('AMap.Geolocation', function () {
+            geolocation = new AMap.Geolocation({
+                enableHighAccuracy: true,//是否使用高精度定位，默认:true
+                timeout: 10000,          //超过10秒后停止定位，默认：无穷大
+                buttonOffset: new AMap.Pixel(10, 20),//定位按钮与设置的停靠位置的偏移量，默认：Pixel(10, 20)
+                zoomToAccuracy: true,      //定位成功后调整地图视野范围使定位位置及精度范围视野内可见，默认：false
+                buttonPosition: 'RB'
+            });
+            map.addControl(geolocation);
+            geolocation.getCurrentPosition();
+            AMap.event.addListener(geolocation, 'complete', onComplete);//返回定位信息
+            AMap.event.addListener(geolocation, 'error', onError);      //返回定位出错信息
+        });
+
+        //解析定位结果
+        function onComplete(data) {
+            var map = new AMap.Map("container", {
+                resizeEnable: true,
+                zoom: 18
+            });
+            x = data.position.getLng();
+            y = data.position.getLat();
+            lnglatXY = [x, y]; //已知点坐标
+            var geocoder = new AMap.Geocoder({
+                radius: 1000,
+                extensions: "all"
+            });
+            geocoder.getAddress(lnglatXY, function (status, result) {
+                if (status === 'complete' && result.info === 'OK') {
+                    geocoder_CallBack(result);
+                }
+            });
+            var marker = new AMap.Marker({  //加点
+                map: map,
+                position: lnglatXY
+            });
+            map.setFitView();
+
+        }
+
+        // 解析定位错误信息
+        function onError(data) {
+            $('.sefe').html("定位失败");
+        }
+
+        function geocoder_CallBack(data) {
+            var address = data.regeocode.formattedAddress; //返回地址描述
+            $('.sefe').append(address);
+
+        }
+
+
+    }();
+
+</script>
+
+</html>

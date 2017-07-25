@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>模式</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+    <link rel="stylesheet" href="__WAP__/css/layer.css">
+    <style>
+       
+        .fes{
+            width:200px;height:200px;
+            position: relative;
+        }
+        .se{
+            width:50px;line-height: 23px;
+            position: absolute;bottom: 0px;
+            margin: auto;
+        }
+        .fefe{
+            width: 300px;height:200px;border: 1px solid #ddd;border-bottom: none;
+            background: #FFF;margin: auto;left: 120px;margin-top: 100px;border-radius: 3px;
+            text-align: center;
+
+        }
+        .fefe select{
+            display: inline-block;float: left;
+            border-radius: 3px;
+        }
+        .fefessf{
+            position: fixed;width: 100%;height: 100%;background: rgba(0,0,0,.6);top:0px;display: none;
+        }
+        select{}
+        .close{
+
+            width: 40px;line-height: 30px;float: left;
+            border: 1px solid #ddd;border-radius: 3px;text-align: center;
+            margin-bottom: 10px;
+            background: rgba(5,75,144,.3);
+        }
+    #setButtonPosition{
+        border: 1px solid #ddd;
+        border-top:none;
+        width:300px;
+        height: 30px;
+        margin:auto;
+        background: #fff;
+        border-radius:3px;
+    }
+
+    </style>
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container teacher-5">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+        <span class="title ">模式</span>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div class="bar1">手动<div class="toggle active">
+                  <div class="toggle-handle"></div>
+                 </div>自动</div>
+        <div class="bar2">
+            <div style="font-size: 16px;">每日自动接单上限<input type="text">单</div>
+            <div><span>达到上限后改为手动模式</span><span>查看我的接单券</span></div>
+        </div>
+        <volist name="typeData" id='wo' key='key'>
+        <div class="bar3"> 
+            <p>添加接单类别{$key}</p>
+            <div><span>已选"{$wo.cate_Name}"</span><span><a data-id="{$wo.cate_Id}" class="clicka" href="javascript:void(0);">更改接单类别 <img src=" __WAP__/images/se.png" alt=""></a></span></div>
+        </div>
+        </volist>
+<!--         <div class="bar4">
+            <p>添加接单类别②</p>
+            <div><span>已选"课内辅导/中学"</span><span><a href="#">更改接单类别 <img src=" __WAP__/images/se.png" alt=""></a></span></div>
+        </div> -->
+        <div class="bar5">
+            <a href="javascript:void(0)"><i class="icon icon-add2"></i> 更多</a>
+        </div>
+
+
+    </div>
+</div>
+<form action="" id="sc_register_form">
+<input type="hidden" name="id" class="setid">
+<div class='fefessf'><div class='fefe'>
+                                <select name="concern_type" id="" class="parentselect2" data-url="{:U('Wap/Index/getchildtype')}">
+                               <option value="nocheck">请选择</option>
+                                <volist name='typeset' id="vo" >
+
+                                   <option value="{$vo.cate_Id}">{$vo.cate_Name}</option>
+                                    </volist>                                     
+                                </select>   
+                        </div>
+                        <div id="setButtonPosition">
+                        <div class="close closebtn">关闭</div> <div data-url="{:U('Wap/Teacher/ajaxaddteachertype')}" class="close sc_register">提交</div>                             
+                        </div>
+
+
+</div>
+</form>
+</body>
+<script src="Public/Admin/js/jquery-1.8.3.min.js"></script>
+<!-- <script src=" __WAP__/js/ratchet.min.js"></script> -->
+<script src="__WAP__/js/layer.js"></script>
+<script type="text/javascript">
+$('.closebtn').click(function(){
+    history.go(0);
+});
+var id='';
+$('.clicka').click(function(){
+    id=$(this).data('id');
+    $('.setid').val(id);
+    $('.fefessf').show();
+});
+$('.closebtn').click(function(){
+    $('.fefessf').hide();
+});
+$('.sc_register').click(function () {
+                var _this = $(this);
+                _this.attr('disabled', true);
+
+                var data = $('#sc_register_form').serialize();
+
+                var url = _this.data('url');
+
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'post',
+                    data: data,
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.open({content: "添加成功", time: 2});
+                            window.history.go(0);
+                        } else {
+                            layer.open({content: data.info, time: 2});
+                            _this.attr('disabled', false);
+                        }
+                    }
+                });
+});
+ $('.bar5 a').click(function(){
+    $('.fefessf').show();
+ //    layer.open({
+ //        maxmin:true,
+ //    closeBtn:2,
+ //    skin: 1,
+ //    time:0,
+ //      type: 0, 
+ //      content: '<div class="fes"><select name="self_type" class="divgetchildselect"><volist name="typeset" id="vo"><option value="{$vo.cate_Id}">{$vo.cate_Name}</option></volist></select><button class="se">确定</button></div>' 
+ //    })    
+ });  
+$('.divgetchildselect').change(function(){
+    alert(1);
+});
+$('.fefe').on('change','.parentselect2',function(){
+
+                var parent_id=$(this).val();
+
+                var url="{:U('Wap/Index/getchildtype')}";
+
+                var _this=$(this);
+
+                var index01=_this.index();
+
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'get',
+                    data: {parent_id:parent_id},
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                                var str='<select name="concern_type" id="" class="parentselect2" data-url="{:U("Wap/Index/getchildtype")}">';
+                                $.each(data.childtypedata,function(index,value){
+                                    str+='<option value='+value['cate_Id']+'>'+value['cate_Name']+'</option>'
+                                });
+                                str+='</select>'
+                               $('.fefe').find(".parentselect2:gt("+index01+")").remove();
+                               $('.fefe').append(str);
+                        } else {
+                            // layer.open({content: data.info, time: 2});
+                            // _this.attr('disabled', false);
+                        }
+                    }
+                });   
+});
+
+// window.addEventListener("click", function(b) {
+//         a(b.target) && b.preventDefault()
+// });
+</script>
+</html>

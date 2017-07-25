@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>用户 - 编辑个人资料</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/swiper.min.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<body >
+<div class = "container user-1">
+    <!-- header -->
+    <header class="header b1">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="top-left-back"></span></a>
+        <span class="top-text">编辑资料</span>
+        <a href="javascript:void(0);" onclick = "submit();"><span class="top-right-yes"></span></a>
+    </header>
+    <div class="header-height"></div>
+
+
+
+
+    <!-- page -->
+    <div class = "page">
+        <form action="#1" method="post" id ="form1" >
+            <div class="item" style="text-align: center;margin-top: 20px;border:0;">
+                <input type="file"  id = "file" style="display: none">
+                <input type="hidden" name="img_head">
+                <input  name="rq_img" id="rq_img" type="file" class="form-control" style="display: none;" />
+                <a href="javascript:void(0);" onclick = "file()">
+                    <img class="headss" src="{$data.img_head|default='__WAP__/images/user/user.png'}">
+                </a>
+            </div>
+            <div class="item">
+                <span>名字</span>
+                <span class="r">
+                    <input type="text" value="{$data.name}" name="name" placeholder="未填写">
+                </span>
+            </div>
+            <div class="item">
+                <span>关于我</span>
+                <span class="r">
+                    <input type="text" value="{$data.aboutme}" name="aboutme" placeholder="未填写">
+                </span>
+            </div>
+            <div class="item" style="margin-top:20px;">
+                <span>公司/组织</span>
+                <span class="r">
+                    <input type="text" value="{$data.company}" name="company" placeholder="未填写">
+                </span>
+            </div>
+            <div class="item">
+                <span>职业/职称</span>
+                <span class="r">
+                    <input type="text" value="{$data.profession}" name="profession" placeholder="未填写">
+                </span>
+            </div>
+            <div class="item">
+                <span>地区</span>
+                <span class="r">
+                    <input type="text" value="{$data.region}" name="region" placeholder="未选择">
+                </span>
+            </div>
+            <div class="item" style="margin-top:20px;">
+                <span>性别</span>
+                <span class="r">
+                男
+                </span>
+            </div>
+            <div class="item">
+                <span>生日</span>
+                <span class="r">
+                    <input type="text" value="{$data.Birthday}" name="Birthday" placeholder="未选择">
+                </span>
+            </div>
+
+        </form>
+    </div>
+</div>
+</body>
+<script src="Public/Admin/js/jquery-1.8.3.min.js"></script>
+<script src="__WAP__/js/layer.js"></script>
+<script src="Public/Admin/js/ajaxfileupload.js"></script>
+<script type="text/javascript">
+    $('input[name="rq_img"]').live('change', function () {
+            uploadImg();
+    });
+    //上传图片
+    function uploadImg() {
+
+            $.ajaxFileUpload({
+                url: "{:U('Wap/User/ajaxUploadImg')}",
+                type: 'post',
+                fileElementId: 'rq_img',
+                secureuri: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        $('input[name="img_head"]').val(data.img_src);
+                        $('.headss').attr('src',data.tmp_dir);
+                        // layer.alert(data.img_src);
+                     
+                    } else if (data.status == 0) {
+                        layer.alert(data.info, {icon: 2});
+                    }
+                }
+            });
+           // alert(1);
+    }
+    function file()
+    {
+        $('input[name="rq_img"]').click();
+    }
+    function submit()
+    {
+        var a=$("#form1").serialize();
+                  $.ajax({
+                    url:"{:U('Wap/User/UserInformation')}",
+                    async: true,
+                    type: 'post',
+                    data: a,
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                             layer.open({content: data.info, time: 2,end:function(){
+                                //window.location.href="{:U('Wap/Student/index')}";
+                            }});                               
+                        } else {
+                            layer.open({content: data.info, time: 2,end:function(){
+                                //window.location.href=data.url;
+                            }});
+                           // _this.attr('disabled', false);
+                        }
+                    }
+                });          
+    }
+</script>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i class="ec-list"></i>管理员信息管理
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse">
+                                <form class="navbar-form form-inline" action="" method="get">
+                                    <input type="hidden" name="g" value="Admin" />
+                                    <input type="hidden" name="m" value="Admin" />
+                                    <input type="hidden" name="a" value="index" />
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label" for="input-mobile">用户名：</label>
+                                        <input type="text" name="admin_name" value='{$Think.get.admin_name}' class="form-control" placeholder="用户名" />
+                                    </div>
+                                    <div class="form-group pull-right">
+                                        <button type="submit" class="btn btn-primary">筛选</button>
+                                        <a href="{:U('Admin/Admin/addAdmin')}" class="btn btn-primary">添加管理员</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                        <div class="table-responsive">
+                            <table  class="table table-bordered table-striped">
+                                <thead>
+                                    <tr role="row">
+                                        <th>用户名</th>
+                                        <th>所属角色</th>
+                                        <th>创建时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <if condition="empty($adminlist)">
+                                    <tr role="row" align="center"><td colspan="4">暂无数据</td></tr>
+                                    <else />
+                                    <volist name="adminlist" id="admin">
+                                        <tr role="row">
+                                            <td>{$admin.admin_name}</td>
+                                            <td>{$admin.role_name}</td>
+                                            <td>{$admin.create_time|date='Y-m-d H:i', ###}</td>
+                                            <td>
+                                            <a class="btn btn-primary" href="{:U('Admin/Admin/editAdmin',array('admin_id'=>$admin['admin_id']))}">修改</a>
+                                            <a class="btn btn-danger sc_del_admin" href="javascript:void(0)" data-url="{:U('Admin/Admin/ajaxDelAdmin',array('admin_id'=>$admin['admin_id']))}">删除</a>
+                                        </td>
+                                        </tr>
+                                    </volist>
+                                </if>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-left"></div>
+                            <div class="col-sm-6 text-right">
+                                <ul class="pagination" id="page_ul"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+        $('.sc_del_admin').click(function () {
+            var _this = $(this);
+            var url = _this.data('url');
+            layer.confirm('是否删除', {
+                title: '提示',
+                btn: ['是', '否']
+            }, function (index) {
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'get',
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.alert(data.info, {icon: 1,
+                                end: function () {
+                                    window.history.go(0);
+                                }, cancel: function () {
+                                    window.history.go(0);
+                                }});
+                        } else {
+                            layer.alert(data.info, {icon: 2});
+                        }
+                    }
+                });
+                layer.close(index);
+            }, function () {
+            });
+        });
+                page({$page_arr.page}, 10, {$page_arr.pages}, document.getElementById('page_ul'), '{$page_arr.url}');
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?php
+foreach ($variable as $key => $value) {
+	
+	if(haschild){
+		echo $value;
+		
+	}else{
+		echo $value;
+	}
+	
+}

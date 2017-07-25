@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>我的课程</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container user-1">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+        <span class="title ">我的订单</span>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+    
+        <div class="bar">
+            <p>最近订单</p>
+            <div class="bar1">
+             <volist name='historyOrder' id='vo'>
+                <div class="a">
+                    <p>{$vo.demandName}</p>
+                    <div><i class="icon c1" ></i>{$vo.date|date='Y-m-d H:i:s',###}</div>
+                    <div><i class="icon c2"></i>由{$vo.teacher_name}老师提供的16课时课程</div>
+                    <div><i class="icon c3"></i>状态：{$vo.status}</div>
+                    <a style="color:red;" href="{:U('Wap/User/phpqrcode',array('order_id'=>$vo['order_id']))}">二维码</a>
+                </div>
+            </volist>
+                <div class="b">
+<!--                     <p>历史订单</p>
+                    <volist name='historyOrder' id='vo'>
+                    <div><p>{$vo.date|date='Y-m-d H:i:s',###}提交需求：{$vo.demandName}</p><span>{$vo.status}</span></div>
+                    </volist> -->
+<!--                     <div><p>2017年1月2日提交需求：艺术类书法</p><span>未选</span></div>
+                    <div><p>2017年1月2日提交需求：艺术类音乐</p><span>下单</span></div>
+                    <div><p>2017年1月2日提交需求：口语类二级</p><span>未选</span></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+</script>
+</html>

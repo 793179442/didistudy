@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$customer['customer_id']">编辑订阅词<else />添加订阅词</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="customer_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+<!--                                     <tr>
+                                        <td width="12%">所属分类：</td>
+                                        <td width="88%">
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="parent_id" class="form-control">
+                                                   <!--  <option value="-1">--请选择--</option> -->
+<!--                                                      <option value="se">--顶级分类--</option>
+                                                    {$treedata}
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr> --> 
+<!--                                     <tr>
+                                        <td class=" col-xs-2">图片：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <span class="input-group-addon rq_img" style="cursor: pointer;">选择图片</span>
+                                                <input type="hidden" name="p_rq_picture1" class="sefes">
+                                                <input name="p_rq_picture"   type="text" class="form-control fromse" readonly value="{$customer.course_img}" />
+                                                <input name="rq_img" id="rq_img" type="file" class="form-control" style="display: none;" />
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>订阅词：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="key_name" value="{$customer.key_name}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+ 
+
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$customer['key_id']">
+                                    <input type="hidden" name="key_id" value="{$customer.key_id}" />
+                                    <input type="button" class="btn btn-info customer" value="编辑" data-url="{:U('Admin/KeyWord/ajaxEditKeyWord')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info customer" value="添加" data-url="{:U('Admin/KeyWord/ajaxAddKeyWord')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script src="__ADMIN__/js/ajaxfileupload.js"></script>
+    <script>
+
+
+
+
+        $('.customer').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+
+            var data = $('#customer_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+        $('.rq_img').click(function () {
+            $('input[name="rq_img"]').click();
+        });
+
+        $('input[name="rq_img"]').live('change', function () {
+            uploadImg();
+        });
+
+        //上传图片
+        function uploadImg() {
+            $.ajaxFileUpload({
+                url: "{:U('Admin/KeyWord/ajaxUploadImg')}",
+                type: 'post',
+                fileElementId: 'rq_img',
+                secureuri: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        //alert(data.img_src);
+                        $('.sefes').val(data.img_src);
+                        $('input[name="p_rq_picture"]').val(data.img_src);
+                    } else if (data.status == 0) {
+                        layer.alert(data.info, {icon: 2});
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

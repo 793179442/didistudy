@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>模式</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container teacher-5">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+        <span class="title ">模式</span>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div class="bar1">手动<div class="toggle active">
+                  <div class="toggle-handle"></div>
+                 </div>自动</div>
+        <div class="bar2">
+            <div style="font-size: 16px;">每日自动接单上限<input type="text">单</div>
+            <div><span>达到上限后改为手动模式</span><span>查看我的接单券</span></div>
+        </div>
+        <div class="bar3"> 
+            <p>添加接单类别①</p>
+            <div><span>已选"课内辅导/中学"</span><span><a href="#">更改接单类别 <img src="images/se.png" alt=""></a></span></div>
+        </div>
+        <div class="bar4">
+            <p>添加接单类别②</p>
+            <div><span>已选"课内辅导/中学"</span><span><a href="#">更改接单类别 <img src="images/se.png" alt=""></a></span></div>
+        </div>
+        <div class="bar5">
+            <a href="#"><i class="icon icon-add2"></i> 更多</a>
+        </div>
+
+
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/ratchet.min.js"></script>
+<script type="text/javascript">
+window.addEventListener("click", function(b) {
+        a(b.target) && b.preventDefault()
+});
+</script>
+</html>

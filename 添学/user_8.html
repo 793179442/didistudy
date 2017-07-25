@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>用户 - 对话</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #ffffff;">
+<div class = "container user-8">
+    <!-- header -->
+    <header class="header b1" style="background-color: #f9f9fb;">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="top-left-back"></span></a>
+        <span class="top-text">CCCC</span>
+        <a href="#"><span class="top-more"></span></a>
+    </header>
+    <div class="header-height"></div>
+
+    <!-- page -->
+    <div class = "page" id = "c">
+            <div class="time">17:20</div>
+            <div class="item he">
+                <span>在吗？</span>
+            </div>
+            <div class="item me">
+                <span>不在，滚！</span>
+            </div>
+            <div class="time">16:20</div>
+            <div class="item he">
+                <span>在吗？</span>
+            </div>
+            <div class="item me">
+                <span>不在，滚！</span>
+            </div>
+            <div class="item he">
+                <span>在吗？</span>
+            </div>
+            <div class="item me">
+                <span>不在，滚！</span>
+            </div>
+    </div>
+    <footer class="footer">
+        <form action="#" method="post">
+            <div class="left">
+                <input type="text" name="" id = "txt" placeholder="输入要发送的信息...">
+            </div>
+            <div class="right">
+                <a href="#"><img src="images/icon/jia.png"></a>
+                <a href="javascript:void(0);" id = "fs"><img src="images/icon/fs.png" ></a>
+            </div>
+        </form>
+    </footer>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $("#fs").on("click",function(){
+        var txt = $("#txt").val();
+        var div = '<div class="item me"><span>'+txt+'</span></div>';
+        $("#c").append(div);
+    });
+</script>
+</html>

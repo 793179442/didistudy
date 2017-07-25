@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>学生</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container student-1">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+    	<a href="javascript:void(0);" onclick="leftcolumn();"><span class="user"></span></a>
+        <a href="javascript:void(0);" onclick = ""><span class="title ">汕头市<i class="icon icon-more1"></i></span></a>	
+        <a href="javascript:void(0);" onclick = ""><span class="message"></span></a>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- 隐藏栏 -->
+    <div class="left-hide-column-bg"></div>
+	<div class="left-hide-column ">
+	    <div class="bar1">
+	        <img src="images/user/user.png">
+	        <p>130****7123</p>
+	        <span><i class="icon icon-vip"></i>普通会员</span>
+	    </div>
+	    <div class="bar2">
+	        <a href="user_1.html"><i class="icon icon-i1"></i><span>课程</span></a>
+	        <a href="user_2.html"><i class="icon icon-i2"></i><span>卡包</span></a>
+	        <a href="#"><i class="icon icon-i3"></i><span>消息</span></a>
+	        <a href="user_3.html"><i class="icon icon-i4"></i><span>设置</span></a>
+	    </div>
+	    <div class="bar3">
+	        <a href="#"><img src="images/user/b1.png"><p>用户指南</p></a>
+	        <a href="user_4.html"><img src="images/user/b2.png"><p>邀请好友</p></a>
+	        <a href="index_login_2.html"><img src="images/user/b3.png"><p>老师招募</p></a>
+	        <a href="#"><img src="images/user/b4.png"><p>最新活动</p></a>
+	        <a href="#"><img src="images/user/b5.png"><p>客服</p></a>
+	    </div>
+	</div>
+	
+    <!-- page -->
+    <div class = "page">
+    	<div class="menu">
+    		<div><a href="#" style="color:#eb6101;">课内辅导</a></div>
+    		<div><a href="#">口语</a></div>
+    		<div><a href="#">艺术</a></div>
+    		<div><a href="#">早教</a></div>
+    		<div style="position:  absolute;right: 5px;"><a href="#"><img src= "images/yanse.png"></a></div>
+    		<div class="clear"></div>
+    	</div>
+
+    	<div class="bar">
+    		<div class="a">
+    			<div class="i"><a href = "#"><img src="images/didian.png"></a></div>
+    			<div class="c"><i></i>珠江楼<span>（当前位置）</span></div>
+    		</div>
+    		<div class="b">
+    			<div class="i"><a href = "#"><img src="images/kefu.png"></a></div>
+    			<div class="c"><a href = "#">一键发布学习需求</a><span><i></i>坐等老师为您提供更专业学习方案</span> </div>
+    		</div>
+    	</div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+function leftcolumn()
+{
+	$(".left-hide-column-bg").toggle();
+	$(".left-hide-column").animate({left:'0px'},50);
+}
+
+$(".left-hide-column-bg").on("click",function(){
+	$(".left-hide-column-bg").toggle();
+	$(".left-hide-column").animate({left:'-250px'},0);
+});
+</script>
+</html>

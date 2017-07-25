@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>发布学习需求</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/mui.picker.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<body style="background-color: #f3f4f6;">
+<div class = "container student-3">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type1"></span></a>
+    	<a href="javascript:void(0);" onclick="leftcolumn();"><span class="user"></span></a>
+        <a href="javascript:void(0);" onclick = ""><span class="title ">发布学习需求</span></a>	
+        <a href="student_2.html" onclick = ""><span class="message"></span></a>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- 隐藏栏 -->
+    <include file='Public:menu'/>
+    
+
+    <!-- page -->
+    <div class = "page">
+        <div class="bar">
+            <div class="b1">
+                <div class="typecourse" data-id='{$data.cate_Id}'>已选"{$data.cate_Name}"</div>
+             <!--    <div style="position: absolute;right: 0;"><a href="#">更改学习类别<img src="__WAP__/images/yanse.png" alt=""></a></div> -->
+            </div>
+            <div class="b2"></div>
+            <div class="b3">
+                <volist name='keyword' id='vs'>
+                <div><label>{$vs.key_name}<input class="key_radio" value="{$vs.key_name}" type="radio" name="key"></label></div>
+<!--                  <div><label>找附近<input type="radio" name="a"></label></div>
+                 <div><label>环境好<input type="radio" name="a"></label></div> -->
+                 </volist>
+                <p>可在备注中填写具体要求</p>
+
+            </div>
+            <input class="username" type="text" name='username' placeholder="名称">
+            <div class="b4">
+                <span>备注：</span>
+                <div ><textarea class='remark' name='remark' spellcheck=""></textarea>
+                </div>
+
+            </div>
+            <div class="b5">
+                <div>
+                    <div id="judge" class="toggle ">
+                        &nbsp;现在
+                            <div class="toggle-handle"></div>
+                            &nbsp;&nbsp;预约
+                    </div>
+
+                </div>
+                
+                <div  class="c">
+                    <a href="javascript:void(0);"  class="senddata" data-url="{:U('Wap/Student/publicdemand')}">确认发布</a>
+                    <span><a href="#">未成功发布怎么办？</a></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+
+<script src="__WAP__/js/layer.js"></script>
+<script src="__WAP__/js/ratchet.min.js"></script>
+<script type="text/javascript">
+$('.key_radio').click(function(){
+    var key_con=$(this).val();
+    $('.remark').val(key_con);
+
+});
+$('.senddata').click(function(){
+    var url=$(this).data("url");
+    var remark=$('.remark').val();
+    var radio=$('input[name="key"]:checked').val();
+    var username=$('.username').val();
+    //预约现在
+    if($("#judge").hasClass("active")){
+        var status=1;
+    }else{
+        var status=2;
+    }
+    
+    var se1=$('.b2').find('.mui-picker').eq(0).find('.highlight').html();
+    var se2=$('.b2').find('.mui-picker').eq(1).find('.highlight').html();
+    var se3=$('.b2').find('.mui-picker').eq(2).find('.highlight').html();
+    var se0=$('.typecourse').data('id');
+    var se=se0+','+se1+','+se2+','+se3;
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'post',
+                    data: {remark:remark,se:se,status:status,radio:radio,username:username},
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.open({content: data.info, time: 2,
+                                end: function () {
+                                    window.location.href = data.url;
+                                }});
+                        }else if(data.status==3){
+                            layer.open({content: data.info, time: 2,
+                                end: function () {
+                                    window.location.href = data.url;
+                                }});
+                        }
+                         else {
+                            layer.open({content: data.info, time: 2});
+                            $('.senddata').attr('disabled', false);
+                        }
+                    }
+                });    
+    
+});
+function leftcolumn()
+{
+	$(".left-hide-column-bg").toggle();
+	$(".left-hide-column").animate({left:'0px'},50);
+}
+
+$(".left-hide-column-bg").on("click",function(){
+	$(".left-hide-column-bg").toggle();
+	$(".left-hide-column").animate({left:'-250px'},0);
+});
+
+
+</script>
+
+<script src="__WAP__/js/mui.min.js"></script>
+<script src="__WAP__/js/mui.picker.min.js"></script>
+<script src="__WAP__/js/data.city.js"></script>
+<script>
+    
+    //选择省市区
+    var city_picker = new mui.PopPicker({layer:3});
+    city_picker.setData(init_city_picker);
+</script>
+
+
+</html>

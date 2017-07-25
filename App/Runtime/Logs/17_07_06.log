@@ -1,0 +1,306 @@
+[ 2017-07-06T16:11:51+08:00 ] 0.0.0.0 /dididi5/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T16:11:54+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.003000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T16:11:57+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `by_order_info` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `by_order_info` WHERE ( `student_id` = 1 ) ORDER BY date desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T16:12:03+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-06T16:12:07+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-06T16:12:13+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_6
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T16:12:21+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-06T16:12:30+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_9
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpStudy\WWW\dididi5\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T16:52:47+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=User&a=user_2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `by_order_info` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `by_order_info` WHERE ( `student_id` = 1 ) ORDER BY date desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `demand_id` = 18 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-06T16:56:02+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = 1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T16:56:07+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = 1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-06T17:51:00+08:00 ] 0.0.0.0 /dididi5/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T17:51:05+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-06T17:51:34+08:00 ] 0.0.0.0 /dididi5/index.php?g=Wap&m=Student&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: teacher_tag D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `by_demand_order` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_demand_order` WHERE ( `student_id` = null )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\dididi5\App\Lib\Action\Wap\StudentAction.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `by_course_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `by_course_type` WHERE ( `cate_ParentId` = 0 ) LIMIT 4   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `by_member_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `by_member_info` WHERE ( `member_id` = null ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+

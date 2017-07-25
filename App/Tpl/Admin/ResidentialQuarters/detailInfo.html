@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> 小区信息</h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="residential_quarters_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td width="12%">小区名称：</td>
+                                        <td width="88%">
+                                            <div class="input-group col-xs-6">{$residential_quarters.residential_quarters}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>所属机构：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">{$residential_quarters.instituition_name}（{$residential_quarters.par_instituition_name}）</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>开发商：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">{$residential_quarters.rq_developers}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>建筑面积：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$residential_quarters.floor_area}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>占地面积：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$residential_quarters.covers_area}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>小区总户数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$residential_quarters.total_household}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>车位数量：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$residential_quarters.parking_lot_number}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>绿化率：</td>
+                                        <td>
+                                            <div class="input-group input-group col-xs-3">{$residential_quarters.greening_rate}%</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>容积率：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$residential_quarters.volume_rate}%</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋数量：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$residential_quarters.building_number}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>小区概况：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$residential_quarters.general_situation}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>小区地址：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$residential_quarters.address}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>小区图片：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6"><notempty name="residential_quarters.rq_picture"><img src="{$residential_quarters.rq_picture}" /></notempty></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>备注：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$residential_quarters.remark}</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+</body>
+</html>

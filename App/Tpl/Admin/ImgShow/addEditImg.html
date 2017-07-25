@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$residential_quarters['rq_id']">编辑轮播图信息<else />添加轮播图</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="residential_quarters_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+   
+                                   
+                                    <tr>
+                                        <td class=" col-xs-2">图片：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <span class="input-group-addon rq_img" style="cursor: pointer;">选择图片</span>
+                                                <input name="p_rq_picture" type="text" class="form-control" readonly value="{$residential_quarters.rq_picture}" />
+                                                <input name="rq_img" id="rq_img" type="file" class="form-control" style="display: none;" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                 <tr>
+                                        <td width="12%">排序：</td>
+                                        <td width="88%">
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="img_sort" value="{$img_data.img_sort}" maxlength="32" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                   
+                                    <tr>
+                                        <td>跳转路径：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">
+                                                <input value="{$img_data.img_url}" type="text"  name="img_url" class="form-control" style="resize: none;"></input>
+                                                <input type="hidden" name='img_id' value="{$img_data.img_id}">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$img_data['img_id']">
+                                    <input type="hidden" name="rq_id" value="{$residential_quarters.rq_id}" />
+                                    <input type="button" class="btn btn-info residential_quarters" value="编辑" data-url="{:U('Admin/ImgShow/ajaxEditImg')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info residential_quarters" value="添加" data-url="{:U('Admin/ImgShow/ajaxAddImg')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script src="__ADMIN__/js/ajaxfileupload.js"></script>
+    <script>
+
+        $('select[name="p_par_ins"]').change(function () {
+            var _this = $(this);
+
+            var ins_id = _this.val();
+
+            var ins_this = $('select[name="p_instituition_id"]');
+            ins_this.empty();
+            ins_this.attr('disabled', true);
+            ins_this.append('<option value="0">--二级机构--</option>');
+
+            $.ajax({
+                url: '{:U("Admin/ResidentialQuarters/ajaxGetInstituition")}',
+                async: true,
+                type: 'get',
+                data: {ins_id: ins_id},
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        var ins_list = data.data;
+                        for (var i = 0; i < ins_list.length; i++) {
+                            ins_this.append('<option value="' + ins_list[i].ins_id + '">' + ins_list[i].instituition_name + '</option>');
+                        }
+                        ins_this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+
+        $('.rq_img').click(function () {
+            $('input[name="rq_img"]').click();
+        });
+
+        $('input[name="rq_img"]').live('change', function () {
+            uploadImg();
+        });
+
+        //上传图片
+        function uploadImg() {
+            $.ajaxFileUpload({
+                url: "{:U('Admin/ImgShow/ajaxUploadImg')}",
+                type: 'post',
+                fileElementId: 'rq_img',
+                secureuri: false,
+                dataType: 'json',
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        $('input[name="p_rq_picture"]').val(data.img_src);
+                    } else if (data.status == 0) {
+                        layer.alert(data.info, {icon: 2});
+                    }
+                }
+            });
+        }
+
+        $('.residential_quarters').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+            //小区名称
+            var p_residential_quarters = $('input[name="p_residential_quarters"]');
+            var p_residential_quarters_val = $.trim(p_residential_quarters.val());
+            // if (p_residential_quarters_val.length == 0) {
+            //     layer.alert('请输入小区名称', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_residential_quarters.focus();
+            //             p_residential_quarters.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_residential_quarters.focus();
+            //             p_residential_quarters.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+
+            //所属机构
+            var p_instituition_id = $('select[name="p_instituition_id"]');
+            var p_instituition_id_val = $.trim(p_instituition_id.val());
+            // if (p_instituition_id_val == 0) {
+            //     layer.alert('请选择所属机构', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_instituition_id.focus();
+            //             p_instituition_id.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_instituition_id.focus();
+            //             p_instituition_id.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+
+            var re = /^[1-9]\d*$/;
+            var rep = /^[0-9]\d*\.\d*[0-9]\d*$/;
+
+            //建筑面积
+            var p_floor_area = $('input[name="p_floor_area"]');
+            var p_floor_area_val = $.trim(p_floor_area.val());
+            // if (p_floor_area_val.length != 0 && !(rep.test(p_floor_area_val) || re.test(p_floor_area_val))) {
+            //     layer.alert('建筑面积有误', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_floor_area.focus();
+            //             p_floor_area.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_floor_area.focus();
+            //             p_floor_area.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //占地面积
+            var p_covers_area = $('input[name="p_covers_area"]');
+            var p_covers_area_val = $.trim(p_covers_area.val());
+            // if (p_covers_area_val.length != 0 && !(rep.test(p_covers_area_val) || re.test(p_covers_area_val))) {
+            //     layer.alert('占地面积有误', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_covers_area.focus();
+            //             p_covers_area.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_covers_area.focus();
+            //             p_covers_area.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //小区总户数
+            var p_total_household = $('input[name="p_total_household"]');
+            var p_total_household_val = $.trim(p_total_household.val());
+            // if (p_total_household_val.length != 0 && !(re.test(p_total_household_val))) {
+            //     layer.alert('小区总户数有误', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_total_household.focus();
+            //             p_total_household.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_total_household.focus();
+            //             p_total_household.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //车位数量
+            var p_parking_lot_number = $('input[name="p_parking_lot_number"]');
+            var p_parking_lot_number_val = $.trim(p_parking_lot_number.val());
+            // if (p_parking_lot_number_val.length != 0 && !(re.test(p_parking_lot_number_val))) {
+            //     layer.alert('车位数量有误', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_parking_lot_number.focus();
+            //             p_parking_lot_number.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_parking_lot_number.focus();
+            //             p_parking_lot_number.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //绿化率
+            var p_greening_rate = $('input[name="p_greening_rate"]');
+            var p_greening_rate_val = $.trim(p_greening_rate.val());
+            // if (p_greening_rate_val.length != 0 && !(rep.test(p_greening_rate_val) || re.test(p_greening_rate_val))) {
+            //     layer.alert('绿化率有误', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_greening_rate.focus();
+            //             p_greening_rate.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_greening_rate.focus();
+            //             p_greening_rate.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //容积率
+            var p_volume_rate = $('input[name="p_volume_rate"]');
+            var p_volume_rate_val = $.trim(p_volume_rate.val());
+            // if (p_volume_rate_val.length != 0 && !(rep.test(p_volume_rate_val) || re.test(p_volume_rate_val))) {
+            //     layer.alert('容积率有误', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_volume_rate.focus();
+            //             p_volume_rate.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_volume_rate.focus();
+            //             p_volume_rate.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //楼栋数量
+            var p_parking_lot_number = $('input[name="p_parking_lot_number"]');
+            var p_parking_lot_number_val = $.trim(p_parking_lot_number.val());
+            // if (p_parking_lot_number_val.length != 0 && !(re.test(p_parking_lot_number_val))) {
+            //     layer.alert('楼栋数量有误', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_parking_lot_number.focus();
+            //             p_parking_lot_number.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_parking_lot_number.focus();
+            //             p_parking_lot_number.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+
+
+            var data = $('#residential_quarters_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

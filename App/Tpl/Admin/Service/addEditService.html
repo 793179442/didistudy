@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$customer['customer_id']">编辑服务信息<else />添加服务信息</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="customer_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+<!--                                     <tr>
+                                        <td width="12%">所属小区：</td>
+                                        <td width="88%">
+                                            <div class="input-group col-xs-6 form-inline">
+                                                <select name="p_residential_quarters_id" class="form-control">
+                                                    <option value="-1">--请选择--</option>
+                                                    <volist name="residential_quarters" id="rq">
+                                                        <option value="{$rq.rq_id}" <eq name="rq.rq_id" value="$customer.residential_quarters_id">selected</eq>>{$rq.residential_quarters}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>标题：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="title" value="{$customer.title}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+<!--                                     <tr>
+                                        <td>服务类型：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <select name="p_customer_type" class="form-control">
+                                                    <option value="-1">--请选择--</option>
+                                                    <volist name="customer_type_list" id="ct">
+                                                        <option value="{$i}" <eq name="customer.customer_type" value="$i">selected</eq>>{$ct}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+<!--                                     <tr>
+                                        <td>国籍：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">
+                                                <input type="text" class="form-control" name="p_nationality" value="{$customer.nationality}" maxlength="16" />
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>服务内容：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">
+                                                <textarea  class="form-control" name="content" value="{$customer.content}" maxlength="20" >{$customer.content}</textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+<!--                                     <tr>
+                                        <td>服务内容：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">
+                                                <input type="text" class="form-control" name="p_certificates_name" value="{$customer.certificates_name}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>证件号码：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">
+                                                <input type="text" class="form-control" name="p_certificates_number" value="{$customer.certificates_number}" maxlength="30" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>移动电话：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="p_mobile_phone" value="{$customer.mobile_phone}" maxlength="20" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>固定电话：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="p_fixed_telephone" value="{$customer.fixed_telephone}" maxlength="50" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>电子邮箱：</td>
+                                        <td>
+                                            <div class="input-group col-xs-6">
+                                                <input type="text" class="form-control" name="p_email_box" value="{$customer.email_box}" maxlength="30" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>备注：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">
+                                                <textarea name="p_remark" class="form-control" style="resize: none;">{$customer.remark}</textarea>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$customer['service_id']">
+                                    <input type="hidden" name="service_id" value="{$customer.service_id}" />
+                                    <input type="button" class="btn btn-info customer" value="编辑" data-url="{:U('Admin/Service/ajaxEditService')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info customer" value="添加" data-url="{:U('Admin/Service/ajaxAddService')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+
+        $('.customer').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+            // //所属小区
+            // var p_residential_quarters_id = $('select[name="p_residential_quarters_id"]');
+            // var p_residential_quarters_id_val = $.trim(p_residential_quarters_id.val());
+            // if (p_residential_quarters_id_val == 0) {
+            //     layer.alert('请选择所属小区', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_residential_quarters_id.focus();
+            //             p_residential_quarters_id.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_residential_quarters_id.focus();
+            //             p_residential_quarters_id.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+
+            //服务姓名
+            // var p_customer_name = $('input[name="p_customer_name"]');
+            // var p_customer_name_val = $.trim(p_customer_name.val());
+            // if (p_customer_name_val.length == 0) {
+            //     layer.alert('请输入服务姓名', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_customer_name.focus();
+            //             p_customer_name.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_customer_name.focus();
+            //             p_customer_name.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            // //服务类型
+            // var p_customer_type = $('select[name="p_customer_type"]');
+            // var p_customer_type_val = $.trim(p_customer_type.val());
+            // if (p_customer_type_val == -1) {
+            //     layer.alert('请选择服务类型', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_customer_type.focus();
+            //             p_customer_type.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_customer_type.focus();
+            //             p_customer_type.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //性别
+            // var p_sex = $('select[name="p_sex"]');
+            // var p_sex_val = $.trim(p_sex.val());
+            // if (p_sex_val == -1) {
+            //     layer.alert('请选择性别', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_sex.focus();
+            //             p_sex.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_sex.focus();
+            //             p_sex.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //证件名称
+            // var p_certificates_name = $('input[name="p_certificates_name"]');
+            // var p_certificates_name_val = $.trim(p_certificates_name.val());
+            // if (p_certificates_name_val.length == 0) {
+            //     layer.alert('请输入证件名称', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_certificates_name.focus();
+            //             p_certificates_name.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_certificates_name.focus();
+            //             p_certificates_name.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //证件号码
+            // var p_certificates_number = $('input[name="p_certificates_number"]');
+            // var p_certificates_number_val = $.trim(p_certificates_number.val());
+            // if (p_certificates_number_val.length == 0) {
+            //     layer.alert('请输入证件号码', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_certificates_number.focus();
+            //             p_certificates_number.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_certificates_number.focus();
+            //             p_certificates_number.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+            
+            //移动电话
+            // var p_mobile_phone = $('input[name="p_mobile_phone"]');
+            // var p_mobile_phone_val = $.trim(p_mobile_phone.val());
+            // if (p_mobile_phone_val.length == 0) {
+            //     layer.alert('请输入移动电话', {icon: 2, time: 2000,
+            //         end: function () {
+            //             p_mobile_phone.focus();
+            //             p_mobile_phone.select();
+            //             _this.attr('disabled', false);
+            //         }, cancel: function () {
+            //             p_mobile_phone.focus();
+            //             p_mobile_phone.select();
+            //             _this.attr('disabled', false);
+            //         }});
+            //     return;
+            // }
+
+            var data = $('#customer_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

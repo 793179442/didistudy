@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> <if condition="$admin['admin_id']">编辑管理员<else />添加管理员</if></h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="admin_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td width="12%">用户名：</td>
+                                        <td width="88%">
+                                            <div class="col-xs-6">
+                                                <input type="text" class="form-control" name="admin_name" value="{$admin.admin_name}" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>密码：</td>
+                                        <td>
+                                            <div class="col-xs-3">
+                                                <input type="password" class="form-control" name="admin_pwd" value="" maxlength="16" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>确认密码：</td>
+                                        <td>
+                                            <div class="col-xs-3">
+                                                <input type="password" class="form-control" name="re_admin_pwd" value="" maxlength="16" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>角色：</td>
+                                        <td>
+                                            <div class="col-xs-3">
+                                                <select name="role_id" class="form-control">
+                                                    <option value="0">--请选择--</option>
+                                                    <volist name="rolelist" id="role">
+                                                        <option value="{$role.role_id}" <if condition="$role['role_id'] eq $admin['role_id']">selected</if> >{$role.role_name}</option>
+                                                    </volist>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <if condition="$admin['admin_id']">
+                                    <input type="hidden" name="admin_id" value="{$admin.admin_id}" />
+                                    <input type="button" class="btn btn-info admin" value="编辑" data-url="{:U('Admin/Admin/ajaxEditAdmin')}" />
+                                    <else />
+                                    <input type="button" class="btn btn-info admin" value="添加" data-url="{:U('Admin/Admin/ajaxAddAdmin')}" />
+                                </if>
+                                <input type='reset' class="btn btn-info" value='重置' />
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+        $('.admin').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+            //用户名
+            var admin_name = $('input[name="admin_name"]');
+            var admin_name_val = $.trim(admin_name.val());
+            if (admin_name_val.length == 0) {
+                layer.alert('用户名不能为空', {icon: 2, time: 2000,
+                    end: function () {
+                        admin_name.focus();
+                        admin_name.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        admin_name.focus();
+                        admin_name.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var admin_id = $('input[name="admin_id"]').val();
+
+            //密码
+            var admin_pwd = $('input[name="admin_pwd"]');
+            var admin_pwd_val = $.trim(admin_pwd.val());
+
+            //确认密码
+            var re_admin_pwd = $('input[name="re_admin_pwd"]');
+            var re_admin_pwd_val = $.trim(re_admin_pwd.val());
+
+            if (admin_id) {
+                if (admin_pwd_val.length != 0) {
+                    if (admin_pwd_val.length < 6 || admin_pwd_val.length > 16) {
+                        layer.alert('密码长度为6-16位', {icon: 2, time: 2000,
+                            end: function () {
+                                admin_pwd.focus();
+                                admin_pwd.select();
+                                _this.attr('disabled', false);
+                            }, cancel: function () {
+                                admin_pwd.focus();
+                                admin_pwd.select();
+                                _this.attr('disabled', false);
+                            }});
+                        return;
+                    }
+                    if (admin_pwd_val != re_admin_pwd_val) {
+                        layer.alert('确认密码与密码不一致', {icon: 2, time: 2000,
+                            end: function () {
+                                re_admin_pwd.focus();
+                                re_admin_pwd.select();
+                                _this.attr('disabled', false);
+                            }, cancel: function () {
+                                re_admin_pwd.focus();
+                                re_admin_pwd.select();
+                                _this.attr('disabled', false);
+                            }});
+                        return;
+                    }
+                }
+            } else {
+                if (admin_pwd_val.length == 0) {
+                    layer.alert('密码不能为空', {icon: 2, time: 2000,
+                        end: function () {
+                            admin_pwd.focus();
+                            admin_pwd.select();
+                            _this.attr('disabled', false);
+                        }, cancel: function () {
+                            admin_pwd.focus();
+                            admin_pwd.select();
+                            _this.attr('disabled', false);
+                        }});
+                    return;
+                }
+                if (admin_pwd_val.length < 6 || admin_pwd_val.length > 16) {
+                    layer.alert('密码长度为6-16位', {icon: 2, time: 2000,
+                        end: function () {
+                            admin_pwd.focus();
+                            admin_pwd.select();
+                            _this.attr('disabled', false);
+                        }, cancel: function () {
+                            admin_pwd.focus();
+                            admin_pwd.select();
+                            _this.attr('disabled', false);
+                        }});
+                    return;
+                }
+                if (admin_pwd_val != re_admin_pwd_val) {
+                    layer.alert('确认密码与密码不一致', {icon: 2, time: 2000,
+                        end: function () {
+                            re_admin_pwd.focus();
+                            re_admin_pwd.select();
+                            _this.attr('disabled', false);
+                        }, cancel: function () {
+                            re_admin_pwd.focus();
+                            re_admin_pwd.select();
+                            _this.attr('disabled', false);
+                        }});
+                    return;
+                }
+            }
+
+            //角色
+            var role_id = $('select[name="role_id"]');
+            var role_id_val = $.trim(role_id.val());
+            if (role_id_val == 0) {
+                layer.alert('请选择角色', {icon: 2, time: 2000,
+                    end: function () {
+                        role_id.focus();
+                        role_id.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        role_id.focus();
+                        role_id.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var data = $('#admin_form').serialize();
+
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else if (data.status == 2) {
+                        layer.alert(data.info, {icon: 2, time: 2000,
+                            end: function () {
+                                admin_name.focus();
+                                admin_name.select();
+                                _this.attr('disabled', false);
+                            }, cancel: function () {
+                                admin_name.focus();
+                                admin_name.select();
+                                _this.attr('disabled', false);
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

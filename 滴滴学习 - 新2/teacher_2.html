@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>老师</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f7f6fb;">
+<div class = "container teacher-2">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back type3"></span></a>
+        <div class="teacher-top-nav">
+            <a href="teacher_1.html" >订单</a>
+            <a href="teacher_2.html" class="active">接单</a>
+        </div>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div class="bar">
+            <div class="a">
+                <span>李**同学提交需求</span>
+                <span style="color:#abaaab;">2017-1-18 16:42:18</span>
+            </div>
+            <div class="b">
+                <div><i></i><span>初中初二物理</span></div>
+                <div><span style="color:#abaaab;">一对一；优选珠江楼附近；环境好</span></div>
+            </div>
+        </div>
+        <div class="bar">
+            <p>我的课程</p>
+            <div class="item">
+                <div><i></i><span>初二物理 16课时 一对一辅导</span> <input type="checkbox" name="checkbox"> </div>
+                <div><i></i><span>初三物理 16课时 一对多辅导</span><input type="checkbox" name="checkbox"></div>
+                <div><i></i><span>高一物理 16课时 一对一辅导</span><input type="checkbox" name="checkbox"></div>
+            </div>
+            <div class="teacher-more">
+                <a href="#">加载更多课程<i></i></a>
+            </div>
+        </div>
+        <div class="bar">
+            <span style="color:#abaaab;">备注：</span>
+            <div>
+                备注内容
+            </div>
+        </div>
+        
+        <div class="order-btn">
+            <a href="#">确认接单</a>
+        </div>
+
+        <div class="footer-btn">
+            <a href="teacher_3.html">管理我的课程</a>
+        </div>
+
+    </div>  
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(".teacher-more").click(function(){
+    var u = $(".item");
+    var str = '<div><i></i><span>高一物理 16课时 一对一辅导</span><input type="checkbox" name="checkbox"></div>';
+    for (var i = 1;i<=3;i++)
+    {
+        u.append(str);
+    }
+});
+</script>
+</html>

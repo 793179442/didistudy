@@ -1,0 +1,997 @@
+/*  全部页面样式  */
+
+/* 未完成注册 */
+.login .page .banner
+{
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.login .page .nav a
+{
+    position: relative;
+
+    float: left;
+
+    width: 48%;
+    height: 70px;
+    margin: 1%;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.login .page .nav a div
+{
+    padding: 22px 2px;
+}
+.login .page .nav a div p
+{
+    font-size: 20px;
+
+    color: #ee8f3f;
+}
+
+
+
+.login .page .nav .zq-bg
+{
+    position: absolute;
+
+    width: 40px;
+
+    background: url(../images/login/zq.png) no-repeat;
+    background-size: 40px;
+}
+
+
+
+
+/* 教学机构 */
+
+.login-1 .page form
+{
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.login-1 .page .form-item
+{
+    border-bottom: 1px solid #d1d1d1;
+}
+.login-1 .page .form-item input
+{
+    border: 0;
+}
+
+.login-1 .page .nav
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.login-1 .page .nav p
+{
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+.login-1 .page .nav .left
+{
+    display: inline-block;
+
+    width: 140px;
+    margin-right: 10px;
+}
+.login-1 .page .nav  .right
+{
+    display: inline-block;
+
+    width: 140px;
+}
+.login-1 input[type='file']
+{
+    display: none;
+}
+
+
+
+/* 老师招募 */
+
+.login-2 .page form
+{
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.login-2 .page .form-item
+{
+    border-bottom: 1px solid #d1d1d1;
+}
+.login-2 .page .form-item input
+{
+    border: 0;
+}
+
+.login-2 .page .nav
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.login-2 .page .nav p
+{
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+.login-2 .page .nav .left
+{
+    display: inline-block;
+
+    width: 140px;
+    margin-right: 10px;
+}
+.login-2 .page .nav  .right
+{
+    display: inline-block;
+
+    width: 140px;
+}
+.login-2 input[type='file']
+{
+    display: none;
+}
+
+
+
+
+/* 发布新课程 */
+
+.publish .page form
+{
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.publish .page .form-item
+{
+    border-bottom: 1px solid #d1d1d1;
+}
+.publish .page .form-item input
+{
+    border: 0;
+}
+
+.publish .page .nav
+{
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 20px 10px;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.publish .page .nav p
+{
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+.publish .page .nav .left
+{
+    display: inline-block;
+
+    width: 140px;
+    margin-right: 10px;
+}
+.publish .page .nav  .right
+{
+    display: inline-block;
+
+    width: 140px;
+}
+.publish input[type='file']
+{
+    display: none;
+}
+
+
+
+
+
+
+/* 用户 */
+/* 我的课程 */
+.user-1 .page .bar
+{
+    margin-top: 15px;
+    padding: 15px;
+
+    color: #9a9899;
+    background-color: #fff;
+}
+.user-1 .page .bar .icon
+{
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    border-radius: 50%;
+}
+.user-1 .page .bar .icon.c1
+{
+    background: url(../images/user/clock.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    /* background-position: 0px; */
+}
+.user-1 .page .bar .icon.c2
+{
+    background-color: #0ab29f;
+}
+.user-1 .page .bar .icon.c3
+{
+    background-color: #ef813a;
+}
+.user-1 .page .bar > p
+{
+    margin-bottom: 10px;
+    padding: 0;
+}
+.user-1 .page  p
+{
+    /* margin: 21px 10px; */
+    /* padding: 10px 0; */
+    margin-bottom: 10px;
+
+    color: #000;
+}
+.user-1 .page .bar1
+{
+    font-size: 13px;
+
+    padding: 10px;
+
+    background-color: #f4f5f8;
+}
+
+.user-1 .page .bar1 .a div
+{
+    display: -webkit-box;
+    overflow: hidden;
+
+    margin: 5px 0;
+
+    text-overflow: ellipsis;
+
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.user-1 .page .bar1 .b div
+{
+    position: relative;
+
+    margin: 5px 0;
+}
+.user-1 .page .bar1 .b div p
+{
+    position: relative;
+
+    display: -webkit-inline-box;
+    overflow: hidden;
+
+    padding-right: 32px;
+
+    text-overflow: ellipsis;
+
+    color: #9a9899;
+
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    /* display: -webkit-inline-box; */
+}
+.user-1 .page .bar1 .b div span
+{
+    position: absolute;
+    right: 0;
+}
+/* 我的钱包 */
+.user-2 .page
+{
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.user-2 .page ul li
+{
+    background-color: #fff;
+}
+.user-2 .page ul li:last-of-type
+{
+    border: 0;
+}
+.user-2 .page ul li a
+{
+    display: block;
+
+    padding: 15px 10px 10px 10px;
+
+    color: #656565;
+}
+.user-2 .page ul li a i
+{
+    margin-right: 5px;
+}
+.user-2 .page ul li a .r
+{
+    float: right;
+
+    margin-right: 10px;
+}
+
+
+
+/* 设置 */
+.user-3 .page
+{
+    font-size: 15px;
+
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+.user-3 .page > div
+{
+    margin: 10px 0;
+}
+
+.user-3 .page > div  ul li
+{
+    position: relative;
+
+    color: #646464;
+    /* padding: 0 5px; */
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fff;
+}
+.user-3 .page > div  ul li a
+{
+    display: block;
+
+    padding: 10px;
+
+    color: #646464;
+}
+
+.user-3 .page > div ul li:last-of-type
+{
+    border: 0;
+}
+.user-3 .close
+{
+    display: block;
+
+    padding: 10px 0;
+
+    text-align: center;
+
+    color: #ff8618;
+    background: #fff;
+}
+
+.user-3 .switch-btn ul li
+{
+    padding: 10px 15px;
+}
+.user-3 .switch-btn ul li span
+{
+    display: block;
+}
+.user-3 .page > div  ul li > div
+{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+}
+
+/* 邀请好友 */
+
+.user-4 .banner
+{
+    margin-right: -10px;
+    margin-left: -10px;
+
+    text-align: center;
+}
+.user-4 .item
+{
+    text-align: center;
+}
+.user-4 .item a
+{
+    display: inline-block;
+
+    color: #9a9a9a;
+}
+.user-4 .item a img
+{
+    width: 43px;
+}
+.user-4 .item a p
+{
+    font-size: 12px;
+
+    margin: 2px;
+}
+.user-4 .bar
+{
+    text-align: center;
+}
+.user-4 .bar p
+{
+    margin: 10px;
+}
+.user-4 .bar .b
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: #9a9a9a;
+}
+
+
+
+
+
+/*  老师 */
+/* 我是老师 */
+.teacher-1 .page
+{
+    font-size: 14px;
+
+    padding: 0;
+}
+.teacher-1 .bar
+{
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background-color: #fff;
+}
+.teacher-1 .bar .a
+{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.teacher-1 .bar > .a div
+{
+    display: inline-block;
+}
+.teacher-1 .bar .a i
+{
+    display: inline-block;
+
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+
+    background-color: #40b8a2;
+}
+.teacher-1 .bar .a  img
+{
+    width: 50px;
+    margin-top: -22px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+}
+.teacher-1 .bar .a span
+{
+    font-size: 12px;
+
+    display: block;
+
+    margin-right: 10px;
+
+    color: #d4d4d4;
+}
+
+
+.teacher-1 .bar .b
+{
+    position: relative;
+}
+.teacher-1 .bar .b > *
+{
+    display: inline-block;
+}
+
+.teacher-1 .bar .b > a
+{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+
+    color: #ec8f1d;
+    background-color: #e8e7e7;
+}
+.teacher-1 .bar .b > span
+{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.teacher-1 .bar .b > span > a
+{
+    /* position: absolute; */
+    /* right: 15px; */
+    color: #adadad;
+}
+.teacher-1 .bar .item-xq-bg  li
+{
+    padding: 5px 8px;
+}
+.teacher-1 .bar .item-xq-bg  li  a
+{
+    display: -webkit-box;
+    overflow: hidden;
+
+    padding-right: 36px;
+
+    text-overflow: ellipsis;
+
+    color: #4f4f4f;
+
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.teacher-1 .bar .item-xq-bg  li  a i
+{
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+
+    border-radius: 50%;
+    background-color: #00afec;
+}
+.teacher-1 .bar .item-xq-bg  li  a span
+{
+    float: right;
+
+    margin-right: 23px;
+}
+
+.teacher-1 .bar p
+{
+    font-size: 16px;
+
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+    color: #000;
+}
+
+.teacher-1 .bar .c
+{
+    text-align: center;
+}
+.teacher-1 .bar .c a
+{
+    font-size: 13px;
+
+    display: inline-block;
+
+    margin-right: 12px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    border: 1px solid #b2b2b2;
+}
+
+
+
+
+/* 接单 */
+.teacher-2
+{
+    font-size: 15px;
+
+    color: #4c4c4c;
+}
+.teacher-2 .page
+{
+    padding: 0;
+}
+.teacher-2 .bar
+{
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background-color: #fff;
+}
+
+.teacher-2 .bar .a
+{
+    padding: 5px 0;
+}
+.teacher-2 .bar .a span
+{
+    margin-right: 10px;
+}
+.teacher-2 .bar .b
+{
+    padding: 10px 15px;
+
+    border: 1px solid #c5c5c5;
+}
+.teacher-2 .bar > p
+{
+    font-size: 16px;
+
+    padding: 5px 0;
+
+    color: #000;
+}
+.teacher-2 .bar > div > div > i
+{
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: #ef7d00;
+}
+.teacher-2 .bar .item div
+{
+    padding: 5px 5px;
+
+    border-bottom: 1px solid #e4e4e4;
+}
+.teacher-2 .bar .item div input
+{
+    float: right;
+
+    margin-top: 5px;
+}
+.teacher-2 .footer-btn
+{
+    padding-top: 30px;
+
+    text-align: center;
+}
+.teacher-2 .footer-btn a
+{
+    padding: 5px 10px;
+
+    border: 1px solid #565656;
+}
+
+
+
+
+
+/* 我的课程 */
+.teacher-3 .page
+{
+    font-size: 15px;
+
+    padding: 0;
+}
+.teacher-3 .page .bar
+{
+    margin-top: 10px;
+    padding: 10px;
+
+    background-color: #fff;
+}
+.teacher-3 .page .bar > p
+{
+    font-size: 17px;
+
+    margin-left: 5px;
+    padding-bottom: 5px;
+
+    color: #000;
+    border-bottom: 1px solid #dbdada;
+}
+
+.teacher-3 .page .bar  ul li
+{
+    padding: 5px;
+}
+
+.teacher-3 .page .bar  ul li  a
+{
+    color: #606163;
+}
+.teacher-3 .page .bar  ul li  a span
+{
+    color: #f08222;
+}
+.teacher-3 .page .bar .teacher-more a
+{
+    display: block;
+
+    color: #9c9c9c;
+}
+.teacher-3 .page .bar .teacher-more  i
+{
+    display: block;
+
+    width: 13px;
+    height: 10px;
+    margin: 0 auto;
+
+    background-size: 13px;
+}
+.teacher-3 .page .bar > a
+{
+    font-size: 17px;
+
+    display: block;
+
+    margin-left: 5px;
+
+    color: #000;
+}
+
+/* 我关注的课程 */
+.teacher-4 .page
+{
+    font-size: 14px;
+
+    padding: 0;
+}
+.teacher-4 .page .bar
+{
+    padding: 10px;
+}
+.teacher-4 .page .bar ul  li
+{
+    display: inline-block;
+
+    margin: 5px;
+    padding: 0 24px 0 7px;
+
+    text-align: center;
+
+    border: 1px solid #b1b1b1;
+    background: url(../images/add_2.png) right no-repeat;
+    background-color: #fff;
+    background-size: 17px;
+}
+.teacher-4 .page .bar ul  li a i
+{
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    background: url(../images/bottom_1.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+.teacher-4 .page .order-btn
+{
+    text-align: center;
+}
+
+/* 模式 */
+.teacher-5 .page
+{
+    font-size: 14px;
+
+    padding: 15px;
+}
+.teacher-5 .page > div
+{
+    margin-bottom: 20px;
+}
+.teacher-5 .page span
+{
+    color: #a7a7a7;
+}
+.teacher-5 .page  a
+{
+    color: #a7a7a7;
+}
+.teacher-5 .page span:last-of-type
+{
+    float: right;
+}
+.teacher-5 .page  p
+{
+    margin-bottom: 5px;
+
+    text-align: center;
+}
+.teacher-5 .page .bar1
+{
+    font-size: 16px;
+}
+.teacher-5 .page .bar2 input
+{
+    width: 40px;
+    height: 16px;
+    margin: 0 5px;
+}
+.teacher-5 .page .bar5
+{
+    font-size: 18px;
+
+    text-align: center;
+}
+.teacher-5 .page .toggle
+{
+    display: inline-block;
+
+    width: 38px;
+    height: 15px;
+    margin: 0 5px;
+
+    vertical-align: sub;
+
+    border: 2px solid #ccc;
+    background-color: #ccc;
+}
+
+.teacher-5 .page  .toggle-handle
+{
+    width: 15px;
+    height: 15px;
+
+    border-color: #50b233;
+    background-color: #50b233;
+}
+
+
+
+/* 学生 */
+
+.student-1 .page
+{
+    font-size: 15px;
+
+    padding: 0;
+}
+
+.student-1 .page .menu
+{
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    background-color: #fff;
+}
+.student-1 .page .menu > div
+{
+    padding: 10px 15px;
+
+    text-align: center;
+}
+.student-1 .page .menu a
+{
+    padding: 0;
+
+    color: #9e9ea1;
+}
+.student-1 .page .menu img
+{
+    width: 15px;
+}
+
+.student-1 .page .bar
+{
+    position: fixed;
+    left: 50%;
+    bottom: 15px;
+    width: 100%;
+    margin-left: -50%;
+    text-align: center;
+}
+.student-1 .page .bar > div
+{
+    padding: 10px 10px 0 10px;
+}
+.student-1 .page .bar .a > div
+{
+    display: inline-block;
+
+    height: 24px;
+    padding: 8px;
+
+    background-color: #fff;
+}
+
+.student-1 .page .bar .a > div span
+{
+    color: #9e9ea1;
+}
+
+.student-1 .page .bar .a .c
+{
+    padding: 8px 41px;
+}
+
+.student-1 .page .bar .a .c  i
+{
+    background-color: #00b196;
+}
+.student-1 .page .bar .b > div
+{
+    display: inline-block;
+}
+.student-1 .page .bar .b .c
+{
+    display: inline-table;
+
+    text-align: center;
+}
+.student-1 .page .bar .b .c  i
+{
+    background-color: #515ea9;
+}
+.student-1 .page .bar i
+{
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+
+    border-radius: 50%;
+}
+.student-1 .page .bar .b .c > a
+{
+    display: block;
+
+    padding: 5px 55px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5px;
+    background-color: #eb6101;
+}
+.student-1 .page .bar .b > div span
+{
+    font-size: 12px;
+
+    margin-top: 7px;
+
+    color: #9e9ea1;
+}
+.student-1 .page .bar .i
+{
+    display: inline-block;
+
+    height: 24px;
+    margin-right: 5px;
+    padding: 8px;
+
+    background-color: #fff;
+}
+.student-1 .page .bar .i a img
+{
+    width: 24px;
+
+    vertical-align: middle;
+}

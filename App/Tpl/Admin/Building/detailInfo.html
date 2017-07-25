@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ec-list"></i> 楼栋信息</h3>
+                    </div>
+                    <div class="panel-body ">
+                        <form method="post" id="residential_quarters_form" action="">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td width="12%">楼栋编号：</td>
+                                        <td width="88%" colspan="3">
+                                            <div class="input-group col-xs-6">{$building.building_number}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋名称：</td>
+                                        <td colspan="3">
+                                            <div class="input-group col-xs-6">{$building.building_name}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>所属小区：</td>
+                                        <td colspan="3">
+                                            <div class="input-group col-xs-6">{$building.residential_quarters_name}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>单元数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$building.bu_unit}</div>
+                                        </td>
+                                        <td width="12%">每层户数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$building.each_layer_household}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋总户数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$building.building_total_household}</div>
+                                        </td>
+                                        <td width="12%">电梯数量：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$building.elevator_number}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>楼栋类型：</td>
+                                        <td>
+                                            <div class="input-group input-group col-xs-3">{$building.building_type}%</div>
+                                        </td>
+                                        <td width="12%">使用性质：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$building.use_paroperty}%</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>组团：</td>
+                                        <td>
+                                            <div class="input-group col-xs-3">{$building.group}</div>
+                                        </td>
+                                        <td width="12%">区域：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$building.region}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>期数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$building.period}</div>
+                                        </td>
+                                        <td width="12%">总层数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$building.total_layer}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>地下层数：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$building.underground_layer}</div>
+                                        </td>
+                                        <td width="12%">楼栋高度：</td>
+                                        <td>
+                                            <div class="input-group col-xs-12">{$building.building_height}</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>备注：</td>
+                                        <td colspan="3">
+                                            <div class="input-group col-xs-12">{$building.remark}</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-inline form-group text-center">
+                                <a href="javascript:history.go(-1);" class="btn btn-info">返回</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+</body>
+</html>

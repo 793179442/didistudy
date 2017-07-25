@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>发布新课程</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #f0eff5;">
+<div class = "container publish">
+    <!-- header -->
+    <header class="header">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="back"></span></a>
+        <span class="title color1">发布新课程</span>
+    </header>
+    <div style="height: 50px;"></div>
+    <!-- page -->
+    <div class = "page">
+        <div >
+            <form action=""  method="post">
+                <div class="login-form-item">
+                    <label class="">课程名称</label>
+                    <input type="text" name="" placeholder="请输入真实姓名">
+                </div>
+                <div class="login-form-item">
+                    <label class="">收费标准</label>
+                    <input type="text" name="" placeholder ="课程收费">
+                </div>
+                <div class="login-form-item" style="border-bottom:0;">
+                    <label class="">课程介绍</label>
+                    <textarea ></textarea>
+                </div>
+                </form>
+        </div>
+
+        <div class="nav">
+            <p>上传课程照片</p>
+            <div class="left">
+                <a href="javascript:void(0);"  onclick="show1();">
+                    <img src="images/login/img.png">
+                </a>
+                <input type="file" name="" id = "file1">
+            </div>
+            <div class="right">
+                <img src="images/login/img1.png">
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="login-btn">
+            <button class="" type="submit">提交</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    function show1(){
+        $("#file1").click();
+    };
+</script>
+</html>

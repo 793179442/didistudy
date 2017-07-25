@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>发布新课程</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #faf9fe;">
+<div class = "container teacher-3">
+    <!-- header -->
+    <header class="header b1">
+        <a href="javascript:void(0);" onclick = "history.go(-1);"><span class="top-left-back"></span></a>
+        <span class="top-text">发布新课程</span>
+    </header>
+    <div class="header-height"></div>
+    <!-- 隐藏栏 -->
+    <div class="left-hide-column-bg"></div>
+    <div class="left-hide-column ">
+        <div class="bar1">
+            <a href="user_1.html">
+                <img src="images/student/user.png">
+                <span>花花@</span>
+                <span class="icon-right-more"></span>
+            </a>
+        </div>
+        <div class="bar2">
+            <a href="user_2.html"><span>订单 | 任务</span></a>
+            <a href="user_3.html"><span>钱包</span></a>
+            <a href="user_4.html"><span>入驻</span></a>
+            <a href="user_5.html"><span>推荐</span></a>
+        </div>
+        <div class="bar3">
+            <a href="user_6.html"><span>收藏</span></a>
+            <a href="user_7.html"><span>消息</span></a>
+            <a href="user_9.html"><span>设置</span></a>
+        </div>
+    </div>
+
+
+    
+
+    <!-- page -->
+    <div class = "page">
+        <form action="#" method="post">
+        <div class="title">课程名称</div>
+        <div class="bar1">
+            <div class="t1">
+                <span class="l">
+                    <input type="text" name="" placeholder="输入课程名称">
+                </span>
+                <span class="r">0/10</span>
+            </div>
+            <div class="t2">
+                <span class="l">
+                    <input type="text" name="" placeholder="一句话简介，写下课程特色或概要">
+                </span>
+                <span class="r">0/20</span>
+            </div>
+             <div class="t3">
+                <textarea placeholder="输入课程介绍，获取更多的曝光和精准顾客"></textarea>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="bar2">
+            <input type="file" name="" id  = "file" style="display: none;"> 
+            <a href="javascript:void(0)" onclick="file()">
+                <img src="images/teacher/tian.png">
+            </a>
+        </div>
+    
+        <div class="title">设置课程价格</div>
+        <div class="bar3">
+            <div class="item">
+                <label>类别</label>
+                <span><input type="text" name="" placeholder="选择课程所属类别"></span>
+            </div>
+             <div class="item">
+                <label>价格</label>
+                <span><input type="text" name="" placeholder="输入价格"></span>
+            </div>
+             <div class="item">
+                <label>单位</label>
+                <span><input type="text" name="" placeholder="输入计费单位，如小时，次"></span>
+            </div>
+        </div>
+
+        <div class="bar4">
+            <a href="#"><span>+</span>添加服务类型</a>
+        </div>
+
+        <div class="title">设置服务条件</div>
+        <div class="bar5">
+            <div class="item">
+                <label>服务方式</label>
+                <span class="r">请选择服务方式 ></span>
+            </div>
+            <div class="item">
+                <label>服务时间</label>
+                <span class="r">请选择服务起止时间 ></span>
+            </div>
+        </div>
+
+        <div class="fot">
+            <div><button type="submit" class="button1">发布</button></div>
+        </div>
+
+        </form>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/base.js"></script>
+<script type="text/javascript">
+    function file()
+    {
+        $("#file").click();
+    }
+</script>
+</html>

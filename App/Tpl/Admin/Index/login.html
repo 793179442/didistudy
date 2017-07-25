@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body class="login-page">
+        <!-- Start #login -->
+        <div id="login" class="animated bounceIn">
+            <h1 class="text-center">滴滴管理系统</h1>
+            <!-- Start .login-wrapper -->
+            <div class="login-wrapper">
+                <ul id="myTab" class="nav nav-tabs nav-justified bn">
+                    <li class="active">
+                        <a href="#log-in" data-toggle="tab">登录</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content bn">
+                    <div class="tab-pane fade active in" id="register">
+                        <form class="form-horizontal mt20" action="" id="login_form" role="form">
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <!-- col-lg-12 start here -->
+                                    <input id="email1" name="admin_name" type="text" class="form-control left-icon" placeholder="用户名" />
+                                    <i class="ec-user s16 left-input-icon"></i> 
+                                </div>
+                                <!-- col-lg-12 end here -->
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <!-- col-lg-12 start here -->
+                                    <input type="password" class="form-control left-icon" name="admin_pwd" placeholder="密码" />
+                                    <i class="ec-locked s16 left-input-icon"></i> 
+                                </div>
+                                <!-- col-lg-12 end here -->
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <!-- col-lg-12 start here -->
+                                    <button class="btn btn-success btn-block" id="by_p_login">登录</button>
+                                </div>
+                                <!-- col-lg-12 end here -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End #.login-wrapper -->
+        </div>
+        <!-- End #login -->
+    <include file="Public:button" />
+    <script>
+
+        $('#by_p_login').click(function () {
+            var _this = $(this);
+            _this.attr('disabled', true);
+
+            var user_name = $('input[name="admin_name"]');
+            var user_name_val = $.trim(user_name.val());
+            if (user_name_val.length == 0) {
+                layer.alert('用户名不能为空', {icon: 2, time: 2000,
+                    end: function () {
+                        user_name.focus();
+                        user_name.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        user_name.focus();
+                        user_name.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var user_pwd = $('input[name="admin_pwd"]');
+            var user_pwd_val = $.trim(user_pwd.val());
+            if (user_pwd_val.length == 0) {
+                layer.alert('密码不能为空', {icon: 2, time: 2000,
+                    end: function () {
+                        user_pwd.focus();
+                        user_pwd.select();
+                        _this.attr('disabled', false);
+                    }, cancel: function () {
+                        user_pwd.focus();
+                        user_pwd.select();
+                        _this.attr('disabled', false);
+                    }});
+                return;
+            }
+
+            var data = $('#login_form').serialize();
+
+            $.ajax({
+                url: '{:U("Admin/Index/ajaxLogin")}',
+                async: true,
+                type: 'post',
+                data: data,
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

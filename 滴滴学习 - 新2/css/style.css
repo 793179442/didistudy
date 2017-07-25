@@ -1,0 +1,2137 @@
+/*  全部页面样式  */
+
+/* 未完成注册 */
+.login .page .banner
+{
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.login .page .nav a
+{
+    position: relative;
+
+    float: left;
+
+    width: 48%;
+    height: 70px;
+    margin: 1%;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.login .page .nav a div
+{
+    padding: 22px 2px;
+}
+.login .page .nav a div p
+{
+    font-size: 20px;
+
+    color: #ee8f3f;
+}
+
+
+
+.login .page .nav .zq-bg
+{
+    position: absolute;
+
+    width: 40px;
+
+    background: url(../images/login/zq.png) no-repeat;
+    background-size: 40px;
+}
+
+
+
+
+/* 教学机构 */
+
+.login-1 .page form
+{
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.login-1 .page .form-item
+{
+    border-bottom: 1px solid #d1d1d1;
+}
+.login-1 .page .form-item input
+{
+    border: 0;
+}
+
+.login-1 .page .nav
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.login-1 .page .nav p
+{
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+.login-1 .page .nav .left
+{
+    display: inline-block;
+
+    width: 140px;
+    margin-right: 10px;
+}
+.login-1 .page .nav  .right
+{
+    display: inline-block;
+
+    width: 140px;
+}
+.login-1 input[type='file']
+{
+    display: none;
+}
+
+
+
+/* 老师招募 */
+
+.login-2 .page form
+{
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.login-2 .page .form-item
+{
+    border-bottom: 1px solid #d1d1d1;
+}
+.login-2 .page .form-item input
+{
+    border: 0;
+}
+
+.login-2 .page .nav
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.login-2 .page .nav p
+{
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+.login-2 .page .nav .left
+{
+    display: inline-block;
+
+    width: 140px;
+    margin-right: 10px;
+}
+.login-2 .page .nav  .right
+{
+    display: inline-block;
+
+    width: 140px;
+}
+.login-2 input[type='file']
+{
+    display: none;
+}
+
+
+
+
+/* 发布新课程 */
+
+.publish .page form
+{
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.publish .page .form-item
+{
+    border-bottom: 1px solid #d1d1d1;
+}
+.publish .page .form-item input
+{
+    border: 0;
+}
+
+.publish .page .nav
+{
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 20px 10px;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.publish .page .nav p
+{
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+.publish .page .nav .left
+{
+    display: inline-block;
+
+    width: 140px;
+    margin-right: 10px;
+}
+.publish .page .nav  .right
+{
+    display: inline-block;
+
+    width: 140px;
+}
+.publish input[type='file']
+{
+    display: none;
+}
+
+
+
+
+
+
+/* 用户 */
+/* 我的课程 */
+.user-1 .page .bar
+{
+    margin-top: 15px;
+    padding: 15px;
+
+    color: #9a9899;
+    background-color: #fff;
+}
+.user-1 .page .bar .icon
+{
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+
+    border-radius: 50%;
+}
+.user-1 .page .bar .icon.c1
+{
+    background: url(../images/user/clock.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+}
+.user-1 .page .bar .icon.c2
+{
+    background-color: #0ab29f;
+}
+.user-1 .page .bar .icon.c3
+{
+    background-color: #ef813a;
+}
+.user-1 .page .bar > p
+{
+    margin-bottom: 10px;
+    padding: 0;
+}
+.user-1 .page  p
+{
+    margin-bottom: 10px;
+
+    color: #000;
+}
+.user-1 .page .bar1
+{
+    font-size: 13px;
+
+    padding: 10px;
+
+    background-color: #f4f5f8;
+}
+
+.user-1 .page .bar1 .a div
+{
+    display: -webkit-box;
+    overflow: hidden;
+
+    margin: 5px 0;
+
+    text-overflow: ellipsis;
+
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.user-1 .page .bar1 .b div
+{
+    position: relative;
+
+    margin: 5px 0;
+}
+.user-1 .page .bar1 .b div p
+{
+    position: relative;
+
+    display: -webkit-inline-box;
+    overflow: hidden;
+
+    padding-right: 32px;
+
+    text-overflow: ellipsis;
+
+    color: #9a9899;
+
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.user-1 .page .bar1 .b div span
+{
+    position: absolute;
+    right: 0;
+}
+/* 我的钱包 */
+.user-2 .page
+{
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.user-2 .page ul li
+{
+    background-color: #fff;
+}
+.user-2 .page ul li:last-of-type
+{
+    border: 0;
+}
+.user-2 .page ul li a
+{
+    display: block;
+
+    padding: 15px 10px 10px 10px;
+
+    color: #656565;
+}
+.user-2 .page ul li a i
+{
+    margin-right: 5px;
+}
+.user-2 .page ul li a .r
+{
+    float: right;
+
+    margin-right: 10px;
+}
+
+
+
+/* 设置 */
+.user-3 .page
+{
+    font-size: 15px;
+
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+.user-3 .page > div
+{
+    margin: 10px 0;
+}
+
+.user-3 .page > div  ul li
+{
+    position: relative;
+
+    color: #646464;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fff;
+}
+.user-3 .page > div  ul li a
+{
+    display: block;
+
+    padding: 10px;
+
+    color: #646464;
+}
+
+.user-3 .page > div ul li:last-of-type
+{
+    border: 0;
+}
+.user-3 .close
+{
+    display: block;
+
+    padding: 10px 0;
+
+    text-align: center;
+
+    color: #ff8618;
+    background: #fff;
+}
+
+.user-3 .switch-btn ul li
+{
+    padding: 10px 15px;
+}
+.user-3 .switch-btn ul li span
+{
+    display: block;
+}
+.user-3 .page > div  ul li > div
+{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+}
+
+/* 邀请好友 */
+
+.user-4 .banner
+{
+    margin-right: -10px;
+    margin-left: -10px;
+
+    text-align: center;
+}
+.user-4 .item
+{
+    text-align: center;
+}
+.user-4 .item a
+{
+    display: inline-block;
+
+    color: #9a9a9a;
+}
+.user-4 .item a img
+{
+    width: 43px;
+}
+.user-4 .item a p
+{
+    font-size: 12px;
+
+    margin: 2px;
+}
+.user-4 .bar
+{
+    text-align: center;
+}
+.user-4 .bar p
+{
+    margin: 10px;
+}
+.user-4 .bar .b
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: #9a9a9a;
+}
+
+
+
+
+
+/*  老师 */
+/* 我是老师 */
+.teacher-1 .page
+{
+    font-size: 14px;
+
+    padding: 0;
+}
+.teacher-1 .bar
+{
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background-color: #fff;
+}
+.teacher-1 .bar .a
+{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.teacher-1 .bar > .a div
+{
+    display: inline-block;
+}
+.teacher-1 .bar .a i
+{
+    display: inline-block;
+
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+
+    background-color: #40b8a2;
+}
+.teacher-1 .bar .a  img
+{
+    width: 50px;
+    margin-top: -22px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+}
+.teacher-1 .bar .a span
+{
+    font-size: 12px;
+
+    display: block;
+
+    margin-right: 10px;
+
+    color: #d4d4d4;
+}
+
+
+.teacher-1 .bar .b
+{
+    position: relative;
+}
+.teacher-1 .bar .b > *
+{
+    display: inline-block;
+}
+
+.teacher-1 .bar .b > a
+{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+
+    color: #ec8f1d;
+    background-color: #e8e7e7;
+}
+.teacher-1 .bar .b > span
+{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.teacher-1 .bar .b > span > a
+{
+    color: #adadad;
+}
+.teacher-1 .bar .item-xq-bg  li
+{
+    padding: 5px 8px;
+}
+.teacher-1 .bar .item-xq-bg  li  a
+{
+    display: -webkit-box;
+    overflow: hidden;
+
+    padding-right: 36px;
+
+    text-overflow: ellipsis;
+
+    color: #4f4f4f;
+
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.teacher-1 .bar .item-xq-bg  li  a i
+{
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+
+    border-radius: 50%;
+    background-color: #00afec;
+}
+.teacher-1 .bar .item-xq-bg  li  a span
+{
+    float: right;
+
+    margin-right: 23px;
+}
+
+.teacher-1 .bar p
+{
+    font-size: 16px;
+
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+    color: #000;
+}
+
+.teacher-1 .bar .c
+{
+    text-align: center;
+}
+.teacher-1 .bar .c a
+{
+    font-size: 13px;
+
+    display: inline-block;
+
+    margin-right: 12px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    border: 1px solid #b2b2b2;
+}
+
+
+
+
+/* 接单 */
+.teacher-2
+{
+    font-size: 15px;
+
+    color: #4c4c4c;
+}
+.teacher-2 .page
+{
+    padding: 0;
+}
+.teacher-2 .bar
+{
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background-color: #fff;
+}
+
+.teacher-2 .bar .a
+{
+    padding: 5px 0;
+}
+.teacher-2 .bar .a span
+{
+    margin-right: 10px;
+}
+.teacher-2 .bar .b
+{
+    padding: 10px 15px;
+
+    border: 1px solid #c5c5c5;
+}
+.teacher-2 .bar > p
+{
+    font-size: 16px;
+
+    padding: 5px 0;
+
+    color: #000;
+}
+.teacher-2 .bar > div > div > i
+{
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: #ef7d00;
+}
+.teacher-2 .bar .item div
+{
+    padding: 5px 5px;
+
+    border-bottom: 1px solid #e4e4e4;
+}
+.teacher-2 .bar .item div input
+{
+    float: right;
+
+    margin-top: 5px;
+}
+.teacher-2 .footer-btn
+{
+    padding-top: 30px;
+
+    text-align: center;
+}
+.teacher-2 .footer-btn a
+{
+    padding: 5px 10px;
+
+    border: 1px solid #565656;
+}
+
+
+
+
+
+/* 我的课程 */
+.teacher-3 .page
+{
+    font-size: 15px;
+
+    padding: 0;
+}
+.teacher-3 .page .bar
+{
+    margin-top: 10px;
+    padding: 10px;
+
+    background-color: #fff;
+}
+.teacher-3 .page .bar > p
+{
+    font-size: 17px;
+
+    margin-left: 5px;
+    padding-bottom: 5px;
+
+    color: #000;
+    border-bottom: 1px solid #dbdada;
+}
+
+.teacher-3 .page .bar  ul li
+{
+    padding: 5px;
+}
+
+.teacher-3 .page .bar  ul li  a
+{
+    color: #606163;
+}
+.teacher-3 .page .bar  ul li  a span
+{
+    color: #f08222;
+}
+.teacher-3 .page .bar .teacher-more a
+{
+    display: block;
+
+    color: #9c9c9c;
+}
+.teacher-3 .page .bar .teacher-more  i
+{
+    display: block;
+
+    width: 13px;
+    height: 10px;
+    margin: 0 auto;
+
+    background-size: 13px;
+}
+.teacher-3 .page .bar > a
+{
+    font-size: 17px;
+
+    display: block;
+
+    margin-left: 5px;
+
+    color: #000;
+}
+
+/* 我关注的课程 */
+.teacher-4 .page
+{
+    font-size: 14px;
+
+    padding: 0;
+}
+.teacher-4 .page .bar
+{
+    padding: 10px;
+}
+.teacher-4 .page .bar ul  li
+{
+    display: inline-block;
+
+    margin: 5px;
+    padding: 0 24px 0 7px;
+
+    text-align: center;
+
+    border: 1px solid #b1b1b1;
+    background: url(../images/add_2.png) right no-repeat;
+    background-color: #fff;
+    background-size: 17px;
+}
+.teacher-4 .page .bar ul  li a i
+{
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    background: url(../images/bottom_1.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+.teacher-4 .page .order-btn
+{
+    text-align: center;
+}
+
+/* 模式 */
+.teacher-5 .page
+{
+    font-size: 14px;
+
+    padding: 15px;
+}
+.teacher-5 .page > div
+{
+    margin-bottom: 20px;
+}
+.teacher-5 .page span
+{
+    color: #a7a7a7;
+}
+.teacher-5 .page  a
+{
+    color: #a7a7a7;
+}
+.teacher-5 .page span:last-of-type
+{
+    float: right;
+}
+.teacher-5 .page  p
+{
+    margin-bottom: 5px;
+
+    text-align: center;
+}
+.teacher-5 .page .bar1
+{
+    font-size: 16px;
+}
+.teacher-5 .page .bar2 input
+{
+    width: 40px;
+    height: 16px;
+    margin: 0 5px;
+}
+.teacher-5 .page .bar5
+{
+    font-size: 18px;
+
+    text-align: center;
+}
+.teacher-5 .page .toggle
+{
+    display: inline-block;
+
+    width: 38px;
+    height: 15px;
+    margin: 0 5px;
+
+    vertical-align: sub;
+
+    border: 2px solid #ccc;
+    background-color: #ccc;
+}
+
+.teacher-5 .page  .toggle-handle
+{
+    width: 15px;
+    height: 15px;
+
+    border-color: #50b233;
+    background-color: #50b233;
+}
+
+
+
+/* 学生 */
+
+.student-1 .page
+{
+    font-size: 15px;
+
+    padding: 0;
+}
+
+.student-1 .page .menu
+{
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    background-color: #fff;
+}
+.student-1 .page .menu > div
+{
+    padding: 10px 15px;
+
+    text-align: center;
+}
+.student-1 .page .menu a
+{
+    padding: 0;
+
+    color: #9e9ea1;
+}
+.student-1 .page .menu img
+{
+    width: 15px;
+}
+
+.student-1 .page .bar
+{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    z-index: 99999;
+    margin-left: -50%;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #f3f4f6;
+}
+.student-1 .page .bar > div
+{
+    padding: 10px 10px 0 10px;
+}
+.student-1 .page .bar .a > div
+{
+    display: inline-block;
+
+    height: 24px;
+    padding: 8px;
+
+    background-color: #fff;
+}
+
+.student-1 .page .bar .a > div span
+{
+    color: #9e9ea1;
+}
+
+.student-1 .page .bar .a .c
+{
+    padding: 8px 41px;
+}
+
+.student-1 .page .bar .a .c  i
+{
+    background-color: #00b196;
+}
+.student-1 .page .bar .b > div
+{
+    display: inline-block;
+}
+.student-1 .page .bar .b .c
+{
+    display: inline-table;
+
+    text-align: center;
+}
+.student-1 .page .bar .b .c  i
+{
+    background-color: #515ea9;
+}
+.student-1 .page .bar i
+{
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+
+    border-radius: 50%;
+}
+.student-1 .page .bar .b .c > a
+{
+    display: block;
+
+    padding: 5px 55px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5px;
+    background-color: #eb6101;
+}
+.student-1 .page .bar .b > div span
+{
+    font-size: 12px;
+
+    margin-top: 7px;
+
+    color: #9e9ea1;
+}
+.student-1 .page .bar .i
+{
+    display: inline-block;
+
+    height: 24px;
+    margin-right: 5px;
+    padding: 8px;
+
+    background-color: #fff;
+}
+.student-1 .page .bar .i a img
+{
+    width: 24px;
+
+    vertical-align: middle;
+}
+.student-1  .fenlei
+{
+    position: fixed;
+    z-index: 9999;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    color: #666;
+    background-color: #fff;
+}
+.student-1  .fenlei .a
+{
+    font-size: 18px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.student-1  .fenlei .b ul li
+{
+    float: left;
+
+    width: 33.1%;
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    border-top: 1px solid #ececec;
+}
+.student-1  .fenlei .b ul li img
+{
+    width: 60px;
+}
+.student-1  .fenlei .b ul li div
+{
+    font-size: 14px;
+}
+.student-1 .location
+{
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+
+    background-color: #4c4c4c;
+}
+.student-1 .location .m
+{
+    padding: 10px;
+
+    background-color: #fff;
+}
+.student-1 .location .i
+{
+    position: fixed;
+
+    width: 100%;
+    padding: 10px;
+
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #b1b1b1;
+}
+
+.student-1 .location .i input
+{
+    font-size: 15px;
+
+    width: 80%;
+    height: 25px;
+
+    border: 0;
+}
+.student-1 .location .i span
+{
+    float: right;
+
+    margin-top: 2px;
+    margin-right: 22px;
+
+    color: #676767;
+}
+
+.student-1 .location .item
+{
+    background-color: #fff;
+}
+.student-1 .location .item img
+{
+    width: 17px;
+}
+
+.student-1 .location .item p
+{
+    padding: 10px;
+
+    background-color: #eaeaea;
+}
+
+.student-1 .location .item  ul li
+{
+    padding: 10px;
+
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+
+/*消息通知*/
+
+.student-2 .page
+{
+    font-size: 15px;
+
+    padding: 10px;
+
+    color: #464646;
+}
+.student-2 .bar
+{
+    margin: 10px 0;
+}
+.student-2 .bar > .a
+{
+    position: relative;
+
+    height: 45px;
+}
+.student-2 .bar > .a span
+{
+    display: inline-block;
+
+    text-align: center;
+}
+.student-2 .bar > .a .kefu
+{
+    font-size: 12px;
+
+    position: absolute;
+    right: 0;
+
+    padding: 5px;
+
+    background-color: #fff;
+}
+.student-2 .bar > .a span img
+{
+    width: 15px;
+}
+
+.student-2 .bar > .b
+{
+    margin: 10px 0;
+    padding: 10px;
+
+    background-color: #fff;
+}
+.student-2 .bar > .b i
+{
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+
+    border-radius: 50%;
+    background-color: #ee782e;
+}
+.student-2 .bar > .b > div
+{
+    margin-bottom: 5px;
+}
+.student-2 .bar > .b span
+{
+    font-size: 14px;
+
+    margin-left: 12px;
+
+    color: #c5c5c5;
+}
+
+
+.student-2 .bar > .c span a
+{
+    color: #c5c5c5;
+}
+
+
+.student-2 .bar > .d ul li
+{
+    padding: 10px;
+
+    background-color: #f3f4f6;
+}
+.student-2 .bar > .d ul li a
+{
+    color: #959293;
+}
+
+.student-2 .bar > .d ul li a img
+{
+    margin-right: 5px;
+
+    vertical-align: middle;
+}
+.student-2 .bar > p
+{
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #cacaca;
+}
+
+.student-2 .bar .item
+{
+    position: relative;
+
+    margin-top: 15px;
+    padding: 15px;
+
+    background-color: #fff;
+}
+.student-2 .bar .item > a > div
+{
+    display: inline-block;
+}
+
+.student-2 .bar .item .a img
+{
+    width: 25px;
+    padding: 15px;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+}
+.student-2 .bar .item .b
+{
+    line-height: 23px;
+
+    position: absolute;
+    top: 20px;
+
+    width: 55%;
+    margin-left: 5px;
+    padding-right: -10px;
+}
+
+.student-2 .bar .item .b span
+{
+    font-size: 13px;
+
+    color: #c5c5c5;
+}
+.student-2 .bar .item .c
+{
+    font-size: 13px;
+
+    position: absolute;
+    right: 10px;
+
+    color: #c5c5c5;
+}
+
+
+
+
+/*发布学习需求*/
+
+
+
+
+.student-3 .page .bar
+{
+    margin-top: 15px;
+}
+.student-3 .page .bar > div
+{
+    margin-bottom: 10px;
+}
+.student-3 .page .bar .b1
+{
+    position: relative;
+}
+.student-3 .page .bar .b1 div
+{
+    display: inline;
+
+    color: #5d5d5d;
+}
+.student-3 .page .bar .b1 a
+{
+    color: #5d5d5d;
+}
+.student-3 .page .bar .b1 a img
+{
+    width: 13px;
+    margin-left: 5px;
+}
+
+.student-3 .page .bar .b3
+{
+    font-size: 13px;
+
+    margin-top: 20px;
+}
+.student-3 .page .bar .b3 > div
+{
+    display: inline-block;
+}
+.student-3 .page .bar .b3 > div label
+{
+    padding: 5px;
+
+    border: 1px solid #8a8a8a;
+}
+.student-3 .page .bar .b3 > div label input
+{
+    margin-left: 5px;
+}
+.student-3 .page .bar .b3  p
+{
+    margin: 11px 0;
+
+    color: #b7b7b7;
+}
+.student-3 .page .bar .b4
+{
+    padding: 10px;
+
+    background-color: #fff;
+}
+.student-3 .page .bar .b4 span
+{
+    position: absolute;
+
+    color: #b7b7b7;
+}
+.student-3 .page .bar .b4  textarea
+{
+    width: 80%;
+    height: 100px;
+    margin-left: 50px;
+
+    resize: none;
+
+    border: 0;
+}
+.student-3 .page .bar .b5
+{
+    position: relative;
+
+    margin-top: 17px;
+}
+
+.student-3 .page .bar .b5 .toggle
+{
+    line-height: 27px;
+
+    width: 100px;
+    height: 28px;
+    padding-left: 8px;
+
+    color: #757575;
+    border: 3px solid #fff;
+}
+.student-3 .page .bar .b5 .toggle.active
+{
+    border: 3px solid #fff;
+    background-color: #fff;
+}
+.student-3 .page .bar .b5 .toggle-handle
+{
+    width: 57px;
+
+    transform: translate3d(0,0,0);
+    text-align: center;
+
+    border-color: #949494;
+    background: rgba(255,255,255,0);
+}
+.student-3 .page .bar .b5 > div
+{
+    display: inline-block;
+}
+
+.student-3 .page .bar .b5 .c
+{
+    position: absolute;
+    right: 5px;
+
+    text-align: center;
+}
+.student-3 .page .bar .b5 .c > a
+{
+    padding: 5px 17px;
+
+    color: #fff;
+    border-radius: 4px;
+    background-color: #f5925b;
+}
+.student-3 .page .bar .b5 .c span
+{
+    font-size: 13px;
+
+    display: block;
+
+    margin-top: 8px;
+}
+.student-3 .page .bar .b5 .c span a
+{
+    color: #b3b3b3;
+}
+
+
+
+
+
+
+/* 课程 */
+
+.course-1 .page
+{
+    font-size: 14px;
+
+    padding: 0;
+}
+.course-1 .page > div
+{
+    position: relative;
+
+    margin-bottom: 15px;
+    padding: 10px;
+
+    background-color: #fff;
+}
+.course-1 .page > div > p
+{
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+
+    color: #5a5f62;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+
+
+.course-1 .page .bar1 .banner
+{
+    text-align: center;
+}
+
+.course-1 .page .bar1 .a
+{
+    display: inline-block;
+
+    text-align: center;
+}
+
+.course-1 .page .bar1 .a .a1
+{
+    font-size: 30px;
+
+    color: #2ab59f;
+}
+.course-1 .page .bar1 .a .a1 span
+{
+    font-size: 12px;
+}
+.course-1 .page .bar1 .a .a2
+{
+    font-size: 12px;
+
+    color: #8a8582;
+}
+.course-1 .page .bar1  .b
+{
+    position: absolute;
+    top: 21px;
+    right: 0;
+
+    display: inline-block;
+}
+.course-1 .page .bar1  .b  .b1
+{
+    padding: 5px;
+
+    color: #eb5e04;
+    border: 1px solid #eb5e04;
+    border-radius: 4px;
+}
+.course-1 .page .bar1  .b  .b2
+{
+    padding: 5px;
+
+    color: #fff;
+    border: 1px solid #f18a37;
+    border-radius: 4px;
+    background-color: #f18a37;
+}
+
+
+.course-1 .page .bar1 .c
+{
+    margin-top: 5px;
+
+    text-align: center;
+}
+.course-1 .page .bar1 .c span
+{
+    padding: 0 17px;
+
+    color: #9ccb56;
+}
+.course-1 .page .bar1 .c  img
+{
+    position: relative;
+    top: 2px;
+
+    margin-right: 3px;
+}
+
+.course-1 .page .bar2 .a
+{
+    padding-right: 64px;
+}
+.course-1 .page .bar2 .a > div
+{
+    margin-top: 5px;
+}
+.course-1 .page .bar2 .a img
+{
+    position: relative;
+    top: 2px;
+
+    width: 16px;
+}
+.course-1 .page .bar2 .b
+{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+
+    margin-top: 10px;
+    padding-left: 10px;
+
+    border-left: 1px solid #c7c7c7;
+}
+.course-1 .page .bar2 .b img
+{
+    width: 47px;
+}
+
+
+.course-1 .page .bar3 .content
+{
+    padding-bottom: 7px;
+
+    color: #676767;
+    border-bottom: 1px solid #9a9a9a;
+}
+.course-1 .page .bar3 .content > table
+{
+    width: 100%;
+}
+.course-1 .page .bar3 .content > table tr td
+{
+    text-align: right;
+}
+.course-1 .page .bar3 .content > table .t1
+{
+    width: 60%;
+
+    text-align: left;
+}
+.course-1 .page .bar3 .content > table .t2
+{
+    width: 20%;
+
+    text-align: center;
+}
+.course-1 .page .bar3 .content > table .t3
+{
+    width: 20%;
+
+    text-align: right;
+}
+
+.course-1 .page .bar3 .btn
+{
+    margin-top: 5px;
+}
+.course-1 .page .bar3 .btn a
+{
+    display: block;
+
+    color: #45bba0;
+}
+.course-1 .page .bar3 .btn i
+{
+    position: absolute;
+    right: 15px;
+
+    width: 23px;
+    height: 20px;
+
+    background: url(../images/more_1.png) right no-repeat;
+    background-size: 15px;
+}
+
+.course-1 .page .bar4 > div > p
+{
+    margin-bottom: 5px;
+
+    color: #f4a12d;
+}
+.course-1 .page .bar4 > div > span
+{
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #000;
+}
+.course-1 .page .bar4 > div > div
+{
+    margin-bottom: 7px;
+
+    color: #ababab;
+}
+
+
+
+
+
+
+/* 机构 */
+.course-2
+{
+
+}
+
+.course-2 .page
+{
+    padding: 0;
+    font-size: 14px;
+}
+.course-2 .page >div 
+{
+    /* margin-top: 10px; */
+    padding: 10px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.course-2 .page .bar1 .a
+{
+
+}
+.course-2 .page .bar1 .a .a1
+{
+
+font-size: 16px;
+
+margin-bottom: 3px;
+}
+.course-2 .page .bar1 .a .a2
+{
+
+color: #afafaf;
+
+width: 100%;
+
+position: relative;
+}
+.course-2 .page .bar1 .a .a2 img 
+{
+    
+margin-right: 3px;
+}
+.course-2 .page .bar1 .a .a2 > div 
+{
+
+display: block;
+
+float: right;
+
+}
+
+.course-2 .page .bar1 .a .a3
+{
+    color: #cecccc;
+}
+
+.course-2 .page .bar2
+{
+    position: relative;
+    height: 45px;
+}
+.course-2 .page .bar2 .ic
+{
+
+position: absolute;
+}
+.course-2 .page .bar2 .ic img 
+{
+        position: relative;
+        top: 2px;
+        width: 33px;
+        left: 0;
+}
+.course-2 .page .bar2 .a
+{
+    padding-right: 64px;
+    padding-left: 39px;
+}
+
+.course-2 .page .bar2 .a > div
+{
+    margin-top: 5px;
+    color: #999798;
+}
+.course-2 .page .bar2 .b
+{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 1px solid #c7c7c7;
+}
+.course-2 .page .bar2 .b img
+{
+    width: 47px;
+}
+
+
+.course-2 .page .bar3
+{
+    height: 35px;
+    position: relative;
+    margin-top: 10px;
+    border-top: 1px solid #d8d8d8;
+}
+.course-2 .page .bar3 > div
+{
+
+display: inline-block;
+}
+.course-2 .page .bar3 .a
+{
+
+position: absolute;
+
+top: 19px;
+}
+.course-2 .page .bar3 .a span
+{
+    
+color: #f09f36;
+    
+border: 1px solid #f09f36;
+    
+padding: 4px;
+    
+top: 12px;
+}
+.course-2 .page .bar3 .b
+{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 58px;
+    padding-right: 75px;
+}
+.course-2 .page .bar3 .c
+{
+
+position: absolute;
+
+right: 0;
+
+top: 20px;
+}
+
+.course-2 .page .bar4
+{
+
+}
+.course-2 .page .bar4 p 
+{
+
+/* color: #fff; */
+
+color: #afafaf;
+
+padding-bottom: 8px;
+
+border-bottom: 1px solid #d8d8d8;
+
+/* border-bottom: 1px solid #b3b3b3; */
+}
+.course-2 .page .bar4 p  img 
+{
+    
+margin-right: 5px;
+}
+.course-2 .page .bar4 .content
+{
+
+}
+.course-2 .page .bar4 .content >div
+{
+    
+padding: 10px;
+    
+border-bottom: 1px solid #d8d8d8;
+    
+/* border-bottom: 1px solid #fff; */
+}
+.course-2 .page .bar4 .content >div:last-of-type
+{
+
+border:0;
+}
+.course-2 .page .bar4 .content .a
+{
+
+float: left;
+
+margin-right: 10px;
+}
+.course-2 .page .bar4 .content .a img 
+ {
+
+ }
+.course-2 .page .bar4 .content .b
+{
+    
+}
+.course-2 .page .bar4 .content .b .b1
+{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.course-2 .page .bar4 .content .b .b2
+{
+
+margin-top: 10px;
+
+color: #afafaf;
+}
+.course-2 .page .bar4 .content .b .t1
+{
+
+/* color: #45bb9e; */
+
+/* display: inline-block; */
+}
+.course-2 .page .bar4 .content .b .t2
+{
+
+}
+.course-2 .page .bar4 .content .b .t3
+{float: right;}
+.course-2 .page .bar4 .content .btn
+{
+    
+}
+
+
+.course-2 .page .bar5
+{
+
+position: relative;
+}
+.course-2 .page .bar5 a
+{
+    
+/* color: #fff; */
+    
+color: #45bb9e;
+    
+display: block;
+}
+
+.course-2 .page .bar6
+{
+    font-size: 13px;
+    padding: 4px 10px;
+    position: relative;
+}
+.course-2 .page .bar6 p 
+{
+
+font-size: 16px;
+}
+
+.course-2 .page .bar6 .t1
+{
+
+width: 70px;
+
+display: inline-block;
+}
+
+.course-2 .page .bar6 .t2
+{
+    
+color: #9c9c9c;
+}
+
+.course-2 .page .bar6 .icon-line-more
+{
+    
+position: absolute;
+    
+right: 5px;
+    
+margin-top: 0;
+}
+.course-2 .page .bar6 .shipin
+{
+
+margin-top: 5px;
+}
+.course-2 .page .bar6 .shipin .item
+{
+    
+/* float: left; */
+    
+display: inline-block;
+    
+width: 67px;
+    
+height: 67px;
+    
+background-color: #cadc58;
+    
+margin-right: 5px;
+    
+margin-bottom: 5px;
+}
+.course-2 .page .bar6 .pingfen
+{
+    
+border-bottom: 1px solid #d8d8d8;
+    
+padding-bottom: 5px;
+}
+.course-2 .page .bar6 .pinglun 
+{
+
+margin: 10px 0;
+}
+.course-2 .page .bar6 .pinglun  .item
+{
+
+margin-bottom: 8px;
+
+padding-bottom: 8px;
+
+float: left;
+
+border-bottom: 1px solid #d8d8d8;
+}
+.course-2 .page .bar6 .pinglun  .item  .a
+{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.course-2 .page .bar6 .pinglun  .item  .b
+{
+    float: left;
+    width: 80%;
+}
+.course-2 .page .bar6 .pinglun  .item  .b .b1 .t1
+{
+
+color: #38587a;
+
+font-size: 16px;
+
+width: 115px;
+
+overflow: hidden;
+}
+.course-2 .page .bar6 .pinglun  .item  .b .b1 .t2
+{
+    
+float: right;
+}
+.course-2 .page .bar6 .pinglun  .item  .b .b2
+{
+    
+margin-bottom: 8px;
+}
+.course-2 .page .bar6 .pinglun  .item  .b .b3
+{
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 10px;
+}
+.course-2 .page .bar6 .pinglun  .item  .b .b4
+{
+
+}
+.course-2 .page .bar6 .pinglun  .item  .b .b4 a 
+{
+
+display: inline-block;
+
+margin-right: 5px;
+}
+.course-2 .page .bar6 .pinglun  .item  .b .b4 a img 
+{
+    
+}
+
+
+.course-2 .page .bar7
+{
+
+}
+.course-2 .page .bar7 div 
+{
+
+text-align: center;
+}
+.course-2 .page .bar7 a
+{
+    
+color: #1bb39e;
+    
+font-size: 15px;
+    
+padding: 10px 5px;
+    
+margin-bottom: 8px;
+    
+/* width: 230px; */
+    
+display: block;
+    
+border: 1px solid #adadad;
+}
+.course-2 .page .bar7 a img 
+{
+    
+position: relative;
+    
+top: 2px;
+margin-right: 3px;
+}
+.course-2 .page .bar7 a span
+{
+    
+color: #f08938;
+    
+border: 2px solid #f08938;
+    
+padding: 1px 5px;
+    
+margin-right: 5px;
+    
+font-size: 12px;
+}
+
+.course-2 .page   .footer-btn
+{
+
+background-color: #fff;
+
+position: fixed;
+
+bottom: 0;
+
+width: 100%;
+
+padding: 5px;
+
+/* text-align: center; */
+
+border-top: 1px solid #d8d8d8;
+}
+.course-2 .page   .footer-btn div
+{
+    
+float: left;
+    
+/* text-align: center; */
+    
+text-align: center;
+}
+.course-2 .page   .footer-btn img 
+{
+    
+width: 30px;
+}
+.course-2 .page   .footer-btn p
+{
+
+}
+.course-2 .page   .footer-btn .f1
+{
+
+width: 20%;
+
+/* text-align: center; */
+}
+.course-2 .page   .footer-btn .f2
+{
+    
+width: 20%;
+    
+border-left: 1px solid #d8d8d8;
+}
+
+.course-2 .page   .footer-btn .f3
+{width: 55%;position: relative;top: 15px;}
+.course-2 .page   .footer-btn .f3 a
+{
+    
+    background-color: #f08938;
+    color: #fff;
+    padding: 9px 34px;
+    font-size: 17px;
+}

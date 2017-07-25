@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>发布新课程</title>
+    <link rel="stylesheet" href="__WAP__/css/base.css">
+    <link rel="stylesheet" href="__WAP__/css/style.css">
+</head>
+<body style="background-color: #f0eff5;">
+<div>
+	<h1>{$courseData.course_name} <span>{$courseData.course_price}元</span></h1>
+    <span>支付方式</span>
+    <select name="" id="">
+        <option value="">优惠券</option>
+        <option value="">微信</option>
+    </select>
+    <button data-url="{:U('Wap/AddCourse/ajaxorder')}" class="clickset" href="javascript:void(0);">提交订单</button>
+    <input type="hidden" name="order_id" value=<?php echo $_GET['order_id'] ?>>
+</div>
+</body>
+<script src="Public/Admin/js/jquery-1.8.3.min.js"></script>
+<!-- <script src="__WAP__/js/jquery-3.1.1.min.js"></script> -->
+<script src="Public/Admin/js/ajaxfileupload.js"></script>
+<script src="Public/Admin/plugins/layer/layer.js"></script>
+
+<script type="text/javascript">
+
+        $('.clickset').click(function () {
+            var _this = $(this);
+
+            _this.attr('disabled', true);
+            
+            var id=$('input[name="order_id"]').val();
+            var url = _this.data('url');
+
+            $.ajax({
+                url: url,
+                async: true,
+                type: 'post',
+                data: {order_id:id},
+                dataType: 'json',
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function (data, status) {
+                    if (data.status == 1) {
+                        layer.alert(data.info, {icon: 1, time: 2000,
+                            end: function () {
+                                window.location.href = data.url;
+                            }, cancel: function () {
+                                window.location.href = data.url;
+                            }});
+                    } else {
+                        layer.alert(data.info, {icon: 2, time: 2000});
+                         // window.location.href = data.url;
+                        _this.attr('disabled', false);
+                    }
+                }
+            });
+        });
+    
+
+</script>
+</html>

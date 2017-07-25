@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <include file="Public:head" />
+    <body>
+    <include file="Public:header" />
+    <include file="Public:menu" />
+    <!-- Start #content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class='form-group'></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <i class="ec-list"></i>角色信息管理
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse">
+                                <form class="navbar-form form-inline" role="search">
+                                    <div class="form-group pull-right">
+                                        <a href="{:U('Admin/Role/addRole')}" class="btn btn-primary pull-right">添加角色</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                        <div class="table-responsive">
+                            <table  class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>角色名称</th>
+                                        <th>描述</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <if condition="empty($rolelist)">
+                                    <tr><td colspan="3">暂无数据</td></tr>
+                                    <else />
+                                    <volist name="rolelist" id="role">
+                                        <tr role="row" align="center">
+                                            <td>{$role.role_name}</td>
+                                            <td>{$role.explain}</td>
+                                            <td>
+                                                <a class="btn btn-sm btn-primary" href="{:U('Admin/Role/editRole',array('role_id'=>$role['role_id']))}">修改</a>
+                                                <a class="btn btn-sm btn-danger del_role" href="javascript:void(0)" data-url="{:U('Admin/Role/ajaxDelRole',array('role_id'=>$role['role_id']))}">删除</a>
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                </if>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-left"></div>
+                            <div class="col-sm-6 text-right">
+                                <ul class="pagination" id="page_ul"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .content-wrapper -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- End #content -->
+    <include file="Public:button" />
+    <script>
+        $('.del_role').click(function () {
+            var _this = $(this);
+            var url = _this.data('url');
+            layer.confirm('是否删除', {
+                title: '提示',
+                btn: ['是', '否']
+            }, function (index) {
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'get',
+//                data: data,
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.alert(data.info, {icon: 1,
+                                end: function () {
+                                    window.history.go(0);
+                                }, cancel: function () {
+                                    window.history.go(0);
+                                }});
+                        } else {
+                            layer.alert(data.info, {icon: 2});
+                        }
+                    }
+                });
+            }, function () {
+            });
+        });
+        page({$page_arr.page}, 10, {$page_arr.pages}, document.getElementById('page_ul'), '{$page_arr.url}');
+    </script>
+</body>
+</html>

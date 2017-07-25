@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <meta name="Generator" content="TPshop1.2" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>登录</title>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <style>
+
+    .h-mid{
+        text-align: center;
+        width: 120%;
+        line-height:30px;
+        margin: 0px;background:#75b9e6;
+    }
+    .small_font a{
+        font-size: 13px;
+        color: red;
+        text-decoration: none;
+    }
+    .btn_big1{
+        width: 100%;line-height: 25px;background:#f08504;
+        border: none;border-radius: 3px;color: #FFF;font-size: 0.8em;
+    }
+    dt{
+        width: 90px;
+        float: left;
+    }
+    dd input{
+        width: 80%;
+        border: 1px solid #ddd;border-radius: 3px;
+    }
+    #setbody{
+        max-width: 600px;margin: auto;
+    }
+
+    </style>
+
+    </head>
+    <body style="background-color: #f0eff5;">
+    <div id="setbody">
+        <header id="header" class='header'>
+            <div class="h-left"><a href="javascript:history.back(-1)" class="sb-back"></a></div>
+            <div style="text-align:center;width:100%;" class="h-mid">会员登录</div>
+        </header>
+        <div class="denglu">
+            <form action="" id='sc_login_form' method="post">        	
+                <div class="Login">
+                    <dl>
+                        <dt>用户名：</dt>
+                        <dd><input type="text" name="sc_user_name" placeholder="手机号码" value="" /></dd>
+                    </dl>
+                    <dl style=" margin-top:15px;">
+                        <dt>密码：</dt>
+                        <dd><input type="password" name="sc_user_pwd" id="password" placeholder="密码"/></dd>
+                    </dl>
+                    <input type="hidden" name="referurl" value="{$referurl}"/>
+                    <div class="field submit-btn">
+                        <input type="button" class="btn_big1 sc_wap_login" value="登 录" data-url="{:U('Wap/Index/ajaxLogin')}" />
+                    </div>
+                    <br>
+                    <div class="field submit-btn">
+                        <input type="button" class="btn_big1 sc_wap_reg" value="免 费 注 册" data-url="{:U('Wap/Index/Index_register')}" />
+                    </div>
+                    <div class="ng-foot">
+                        <div class="ng-link-area" >
+                            <span >
+                                <a href="{:U('Wap/Index/forget')}" >忘记密码？</a>
+                            </span>
+                        </div>
+                    </div>			
+                </div>
+            </form>
+        </div>
+         <div class="small_font"><a href="">老师登录</a>
+            <br>
+         <a href="">申请成为老师</a></div>
+         </div>
+<script src="__WAP__/js/jquery-3.1.1.min.js"></script>
+<script src="__WAP__/js/ratchet.min.js"></script>
+<script src="__WAP__/js/layer.js"></script>
+<script src="Public/Admin/js/ajaxfileupload.js"></script>
+<script type="text/javascript">
+    $('.sc_wap_reg').click(function(){
+       window.location.href=$(this).data('url');
+    });
+            $('.sc_wap_login').click(function () {
+                var _this = $(this);
+                _this.attr('disabled', true);
+
+
+                var data = $('#sc_login_form').serialize();
+
+                var url = _this.data('url');
+
+                $.ajax({
+                    url: url,
+                    async: true,
+                    type: 'post',
+                    data: data,
+                    dataType: 'json',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function (data, status) {
+                        if (data.status == 1) {
+                            layer.open({content: data.info, time: 2,
+                                end: function () {
+                                    window.location.href = data.url;
+                                }});
+                        } else {
+                            layer.open({content: data.info, time: 2});
+                            _this.attr('disabled', false);
+                            if(data.url){
+                                window.location.href=data.url;
+                            }
+                        }
+                    }
+                });
+            });
+        </script>	
+    </body>
+</html>
